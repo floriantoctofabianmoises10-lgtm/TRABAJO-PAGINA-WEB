@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Origen Selecto</title>
+
+<link rel="icon" type="image/webp" href="https://image.cdn2.seaart.me/upload/static/20260419/27e3b4da06c3fec8e47ceff00b2bf3bd_high.webp">
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+ <header class="header">
+    <header class="header">
+    <div class="logo">
+        <img src="https://image.cdn2.seaart.me/upload/static/20260419/2e91077211f0428955b1dd9bb430c234_high.webp" alt="Logo Origen Selecto">
+    </div>
+</header>
+    </div>
+</header>
+</header>
+
+<main>
+<section class="hero">
+
+   
+    <div class="slides">
+        <img class="slide active" src="https://image.cdn2.seaart.me/2026-04-19/d7iibrte878c73d7r2c0/91e5166eccd3c1d72f521a869f76fa88_high.webp">
+        <img class="slide" src="https://image.cdn2.seaart.me/2026-04-19/d7iicude878c73d7u3a0/e5e5011d88a914cc64ba7e35800fb0c3_high.webp">
+        <img class="slide" src="https://image.cdn2.seaart.me/2026-04-19/d7iie4te878c73d81100/d0e520336dbcd7d092cbdd3f1e30eda8_high.webp">
+    </div>
+
+    
+    <div class="contenido">
+        <h1>Origen Selecto</h1>
+        <p>Donde el origen se encuentra con la excelencia</p>
+
+        <div class="botones">
+            <a href="#" class="btn1">Ver carta</a>
+            <a href="#" class="btn2">Reservar aquí</a>
+        </div>
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    <p>Síguenos</p>
+
+    <div class="redes">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p class="copy">© 2026 Origen Selecto</p>
+</footer>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function cambiarSlide() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}
+
+setInterval(cambiarSlide, 4000);
+</script>
+
+</body>
+</html>
