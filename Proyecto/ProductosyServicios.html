@@ -25,7 +25,32 @@
         <button class="btn-primary">Reservar</button>
     </nav>
 
+    <!-- ==========================================================================
+         SECCIÓN HERO / PORTADA (SLIDER DE IMÁGENES)
+         Se modificó para contener un carrusel de imágenes de alta resolución.
+         ========================================================================== -->
     <header class="hero">
+
+        <!-- NUEVO: Contenedor de las imágenes del slider -->
+        <div class="slider-images">
+            <!-- Imagen 1 (Activa al cargar la página) -->
+            <div class="slider-item active"
+                style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="slider-item"
+                style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            </div>
+            <!-- Imagen 3 -->
+            <div class="slider-item"
+                style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            </div>
+            <!-- Imagen 4 -->
+            <div class="slider-item"
+                style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            </div>
+        </div>
+
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Donde el origen se <br> encuentra con la excelencia</h1>
@@ -44,304 +69,853 @@
 
         </ul>
     </nav>
-
     <main class="menu-section">
-        <div id="entradas" class="grid-container menu-category">
+        <!-- ENTRADAS (La Colección - Layout Asimétrico 3 Columnas B/N) -->
+        <div id="entradas" class="editorial-category menu-category">
+            <div class="category-header">
+                <h1 class="category-title">La Colección</h1>
+                <p class="category-subtitle">Una exploración de texturas y sabores ancestrales, curada con precisión
+                    geométrica y respeto por el origen.</p>
+            </div>
+            <div class="layout-coleccion">
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&q=80&w=800"
+                            alt="Vieiras de Altamar">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Vieiras de Altamar</h2>
+                        <p class="ref-card-desc">Cítricos ahumados, emulsión de algas y polvo de pistacho tostado en
+                            fuego...</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 45.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge-especial">FIRMA DEL CHEF</span>
-                    <img src="https://www.galiciamarisco.com/modules/ybc_blog/views/img/post/vieiras-plancha.jpg"
-                        alt="Vieiras al Trufado">
-                </div>
-                <div class="card-info">
-                    <h2>Vieiras al Trufado</h2>
-                    <span class="price">S/ 65.00</span>
-                    <p>Vieiras selladas con emulsión de coliflor y esencia de trufa blanca.</p>
-                </div>
-            </article>
+                <article class="ref-card featured-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <span class="editorial-badge" style="z-index: 20; position: absolute;">EDICIÓN LIMITADA</span>
+                        <img src="https://martiko.com/wp-content/uploads/2024/12/Jamon-de-pato-y-carpaccio-de-champi.jpg"
+                            alt="Carpaccio Curado">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Carpaccio Curado</h2>
+                        <p class="ref-card-desc">Láminas finas de wagyu, sal negra, trufa blanca y alcaparras fritas.
+                        </p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 68.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge-especial">TEMPORADA</span>
-                    <img src="https://teashop.com/cdn/shop/articles/salmon-tartare-with-avocado-mousse-min.jpg?v=1727705628&width=2048"
-                        alt="Tartar de Salmón">
-                </div>
-                <div class="card-info">
-                    <h2>Tartar de Salmón Austral</h2>
-                    <span class="price">S/ 55.00</span>
-                    <p>Corte manual, cítricos del mediterráneo y perlas de aguacate.</p>
-                </div>
-            </article>
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800"
+                            alt="Pan Madre de Finca">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Pan Madre de Finca</h2>
+                        <p class="ref-card-desc">Fermentación prolongada, mantequilla clarificada y sal de maras.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 22.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- NUEVO: Producto extra 1 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
+                            alt="Ceviche de Origen">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Ceviche de Origen</h2>
+                        <p class="ref-card-desc">Pesca del día curada en cítricos andinos con emulsión de ají amarillo.
+                        </p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 35.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <img src="https://admin.animalgourmet.com/wp-content/uploads/2023/12/pexels-eduardo-krajan-15352336-scaled-e1701884750358.webp"
-                        alt="Ceviche Clásico">
-                </div>
-                <div class="card-info">
-                    <h2>Ceviche Origen</h2>
-                    <span class="price">S/ 48.00</span>
-                    <p>Pesca del día marinada en limón, ají limo, cilantro y leche de tigre.</p>
-                </div>
-            </article>
+                <!-- NUEVO: Producto extra 2 con Descuento -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=800"
+                            alt="Tartar del Bosque">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Tartar del Bosque</h2>
+                        <p class="ref-card-desc">Setas silvestres, trufa negra y yema de codorniz curada en soya.</p>
+                        <div class="ref-card-footer">
+                            <!-- Aquí usamos la clase de descuento -->
+                            <span class="price-discount">$ 45.00</span>
+                            <span class="ref-card-price">$ 38.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- NUEVO: Producto extra 3 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.squarespace-cdn.com/content/v1/624fa63d5ba99559345806e6/47c2b7e1-9703-408d-9dda-07825ba3ef00/EG8_EP43_Pulpo-al-Olivo_67645e919b12432e590b303456de6e74.jpg"
+                            alt="Pulpo al Olivo Ahumado">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Pulpo al Olivo</h2>
+                        <p class="ref-card-desc">Tentáculo braseado, crema de botija y polvo de aceituna negra.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 42.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NUEVO: Producto extra 4 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800"
+                            alt="Conchas al Carbón">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Conchas al Carbón</h2>
+                        <p class="ref-card-desc">Gratinadas con mantequilla de ajo negro y parmesano añejo.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 48.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
 
-        <div id="platos-fondo" class="grid-container menu-category" style="display: none;">
-            <!-- Puedes añadir aquí los platos de fondo siguiendo la misma estructura que las entradas -->
+        <!-- PLATOS DE FONDO -->
+        <!-- PLATOS DE FONDO -->
+        <div id="platos-fondo" class="editorial-category menu-category" style="display: none;">
+            <div class="category-header">
+                <h1 class="category-title">Platos de Fondo</h1>
+                <p class="category-subtitle">Cortes premium y pesca salvaje, elevados mediante técnicas que honran
+                    nuestra herencia gastronómica.</p>
+            </div>
+            <div class="layout-platos">
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                            alt="Lomo Vetado">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Lomo Vetado</h2>
+                        <p class="ref-card-desc">Corte premium con costra de hierbas andinas y reducción de vino tinto.
+                        </p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 85.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge-especial">RESERVA PRIVADA</span>
-                    <img src="https://s2-casavogue.glbimg.com/YpTtpPaUhRGc0KQlRmuWNbVU9qY=/0x0:1500x1000/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2025/g/9/ebqA32QFurBdesiW57hQ/churrasco.jpg"
-                        alt="Vieiras al Trufado">
-                </div>
-                <div class="card-info">
-                    <h2>Corazón de Lomo al Malbec y Texturas de Tierra</h2>
-                    <span class="price"> S/ 115.00</span>
-                    <p>Corte premium de lomo fino sellado a la brasa, bañado en una reducción de Malbec y frutos rojos,
-                        acompañado de un puré aterciopelado de papas nativas y vegetales orgánicos baby.</p>
-                </div>
-            </article>
+                <!-- NUEVO: Plato 2 con Descuento -->
+                <article class="ref-card featured-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <span class="editorial-badge" style="z-index: 20; position: absolute;">TOP VENTAS</span>
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                            alt="Costillas Glaseadas">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Costillas Glaseadas</h2>
+                        <p class="ref-card-desc">Cocción lenta por 24 horas, puré rústico y demi-glace de chicha de
+                            jora.</p>
+                        <div class="ref-card-footer">
+                            <span class="price-discount">$ 95.00</span>
+                            <span class="ref-card-price">$ 75.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1636474498689-27e2d3ecf8d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBob3xlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Tartar de Salmón">
-                </div>
-                <div class="card-info">
-                    <h2>Magret de Pato con Reducción de Higos y Lavanda</h2>
-                    <span class="price">S/ 155.00</span>
-                    <p>Pechuga de pato de granja cocida a baja temperatura, servida con una salsa melosa de higos
-                        frescos y un toque sutil de lavanda, sobre una cama de risotto de quinua blanca.</p>
-                </div>
-            </article>
+                <!-- NUEVO: Plato 3 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800"
+                            alt="Salmón Rosado">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Salmón Rosado</h2>
+                        <p class="ref-card-desc">Piel crujiente, espárragos al grill y beurre blanc de maracuyá.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 82.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <img src="https://thumbs.dreamstime.com/b/high-quality-food-photograph-captures-beautifully-plated-dish-grilled-salmon-accompanied-quinoa-asparagus-all-set-364637692.jpg"
-                        alt="Ceviche Clásico">
-                </div>
-                <div class="card-info">
-                    <h2>Róbalo Real en Costra de Sal de Marass</h2>
-                    <span class="price">S/ 213.00</span>
-                    <p>Filete de róbalo salvaje en costra de sal ancestral y finas hierbas, acompañado de espárragos
-                        verdes de Huacho a la parrilla y una beurre blanc de cítricos amazónicos.</p>
-                </div>
-            </article>
+                <!-- NUEVO: Plato 4 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800"
+                            alt="Risotto de Setas">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Risotto de Setas</h2>
+                        <p class="ref-card-desc">Arroz arborio, selección de setas trufadas y polvo de oro comestible.
+                        </p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 65.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
 
-            <h2
-                style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #333;">
-                Pronto: Nuestra selección de Platos de Fondo</h2>
+                <!-- NUEVO: Plato 5 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560684352-8497838a2229?auto=format&fit=crop&q=80&w=800"
+                            alt="Magret de Pato">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Magret de Pato</h2>
+                        <p class="ref-card-desc">Sellado en su propia grasa, chutney de aguaymanto y vegetales baby.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 88.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NUEVO: Plato 6 con Descuento -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=80&w=800"
+                            alt="Tomahawk Añejado">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Tomahawk Añejado</h2>
+                        <p class="ref-card-desc">Dry aged por 45 días, chimichurri artesanal y papas andinas.</p>
+                        <div class="ref-card-footer">
+                            <span class="price-discount">$ 180.00</span>
+                            <span class="ref-card-price">$ 150.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NUEVO: Plato 7 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&q=80&w=800"
+                            alt="Corvina al Horno">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Corvina al Horno</h2>
+                        <p class="ref-card-desc">En costra de sal marina, vegetales de estación y aceite de oliva extra
+                            virgen.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 70.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NUEVO: Plato 8 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?auto=format&fit=crop&q=80&w=800"
+                            alt="Pasta Trufada">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title">Pasta Trufada</h2>
+                        <p class="ref-card-desc">Fettuccine artesanal en rueda de Grana Padano y trufa negra fresca.</p>
+                        <div class="ref-card-footer">
+                            <span class="ref-card-price">$ 68.00</span>
+                            <span class="ref-card-add">+</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
 
-        <div id="postres" class="grid-container menu-category" style="display: none;">
-            <!-- Puedes añadir aquí los postres siguiendo la misma estructura que las entradas -->
-
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge-especial">FIRMA DEL CHEF</span>
-                    <img src="https://media.licdn.com/dms/image/v2/C4E1BAQGA3F53joS5oA/company-background_10000/company-background_10000/0/1650660567239/chocolates_maa_cover?e=2147483647&v=beta&t=1LHVcCOPCF8CqPTslvrbgfGTMTf8XFU1eOqYa9ny1VM"
-                        alt="Vieiras al Trufado">
-                </div>
-                <div class="card-info">
-                    <h2>Sinfonía de Cacao Orgánico y Flor de Sal</h2>
-                    <span class="price"> S/ 45.00</span>
-                    <p>Mousse de chocolate al 70% de origen amazónico, tierra de cacao amargo, láminas de chocolate
-                        crujiente y un toque de sal de Maras para realzar el dulzor.</p>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <img src="https://plus.unsplash.com/premium_photo-1695750679584-b8e21965ef0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmViaWRhJTIwZGUlMjBjaG9jb2xhdGV8ZW58MHx8MHx8fDA%3D"
-                        alt="Tartar de Salmón">
-                </div>
-                <div class="card-info">
-                    <h2>Esfera de Lúcuma y Crujiente de Café de Altura</h2>
-                    <span class="price">S/ 55.00</span>
-                    <p>Una esfera delicada de crema de lúcuma pura, rellena de un corazón líquido de caramelo salado,
-                        servida sobre una galleta bretona de café tostado artesanalmente.</p>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="card-image-wrapper">
-                    <span class="badge-especial">MARIDAJE PERFECTO</span>
-                    <img src="https://img.freepik.com/foto-gratis/tazon-ceramica-delicioso-postre-brasileno-acai_23-2149788557.jpg?semt=ais_rp_50_assets&w=740&q=80"
-                        alt="Ceviche Clásico">
-                </div>
-                <div class="card-info">
-                    <h2>Milhojas de Vainilla de Madagascar y Frutos del Bosque</h2>
-                    <span class="price">S/ 35.00</span>
-                    <p>Láminas infinitas de hojaldre de mantequilla francesa, crema diplomática de vainilla natural y
-                        una compota ácida de frambuesas y moras silvestres.</p>
-                </div>
-            </article>
-
-
-            <div id="bebidas" class="grid-container menu-category" style="display: none;">
-                <!-- Puedes añadir aquí los platos de fondo siguiendo la misma estructura que las entradas -->
-
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <span class="badge-especial">RESERVA PRIVADA</span>
-                        <img src="https://s2-casavogue.glbimg.com/YpTtpPaUhRGc0KQlRmuWNbVU9qY=/0x0:1500x1000/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2025/g/9/ebqA32QFurBdesiW57hQ/churrasco.jpg"
-                            alt="Vieiras al Trufado">
+        <!-- POSTRES -->
+        <div id="postres" class="editorial-category menu-category" style="display: none;">
+            <div class="category-header">
+                <h1 class="category-title">Postres de Autor</h1>
+                <p class="category-subtitle">A culmination of ancestral techniques and modern precision, each dessert is
+                    a curated journey for the discerning palate.</p>
+            </div>
+            <div class="layout-postres">
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800"
+                            alt="Sinfonía de Cacao">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Sinfonía de Cacao</h2>
+                        <p class="ref-card-desc">70% Amazonian cacao mousse, Maras salt</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$24.00</span>
+                        </div>
                     </div>
-                    <div class="card-info">
-                        <h2>Corazón de Lomo al Malbec y Texturas de Tierra</h2>
-                        <span class="price"> S/ 115.00</span>
-                        <p>Corte premium de lomo fino sellado a la brasa, bañado en una reducción de Malbec y frutos
-                            rojos,
-                            acompañado de un puré aterciopelado de papas nativas y vegetales orgánicos baby.</p>
+                </article>
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800"
+                            alt="Esfera de Lúcuma">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Esfera de Lúcuma</h2>
+                        <p class="ref-card-desc">Lucuma cream, salted caramel heart</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$22.00</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=80&w=800"
+                            alt="Milhojas de Vainilla">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Milhojas de Vainilla</h2>
+                        <p class="ref-card-desc">Madagascar vanilla, forest berries</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0; justify-content: flex-start;">
+                            <span class="price-discount">$28.00</span>
+                            <span class="ref-card-price" style="font-size:1rem;">$24.00</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://assets.isu.pub/document-structure/220927094138-4c92440fbe07bebd5e145e370e1a646c/v1/1f164ce8fe62afaae0da8c7d4037eb1d.jpeg?width=720&quality=85%2C50"
+                            alt="Sorbetes de la Selva">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Sorbetes de la Selva</h2>
+                        <p class="ref-card-desc">Seasonal Amazonian fruits</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$18.00</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1636474498689-27e2d3ecf8d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBob3xlbnwwfHwwfHx8MA%3D%3D"
-                            alt="Tartar de Salmón">
-                    </div>
-                    <div class="card-info">
-                        <h2>Magret de Pato con Reducción de Higos y Lavanda</h2>
-                        <span class="price">S/ 155.00</span>
-                        <p>Pechuga de pato de granja cocida a baja temperatura, servida con una salsa melosa de higos
-                            frescos y un toque sutil de lavanda, sobre una cama de risotto de quinua blanca.</p>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://thumbs.dreamstime.com/b/high-quality-food-photograph-captures-beautifully-plated-dish-grilled-salmon-accompanied-quinoa-asparagus-all-set-364637692.jpg"
-                            alt="Ceviche Clásico">
-                    </div>
-                    <div class="card-info">
-                        <h2>Róbalo Real en Costra de Sal de Marass</h2>
-                        <span class="price">S/ 213.00</span>
-                        <p>Filete de róbalo salvaje en costra de sal ancestral y finas hierbas, acompañado de espárragos
-                            verdes de Huacho a la parrilla y una beurre blanc de cítricos amazónicos.</p>
+                <!-- NUEVO: Postre 5 con Descuento -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&q=80&w=800"
+                            alt="Cremoso de Maracuyá">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Cremoso de Maracuyá</h2>
+                        <p class="ref-card-desc">Pasión amazónica y tierra de cacao.</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0; justify-content: flex-start;">
+                            <span class="price-discount">$25.00</span>
+                            <span class="ref-card-price" style="font-size:1rem;">$20.00</span>
+                        </div>
                     </div>
                 </article>
 
+                <!-- NUEVO: Postre 6 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800"
+                            alt="Texturas de Chirimoya">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Texturas de Chirimoya</h2>
+                        <p class="ref-card-desc">Espuma de chirimoya, crujiente de merengue y naranja.</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$26.00</span>
+                        </div>
+                    </div>
+                </article>
 
-                <div id="especiales" class="grid-container menu-category" style="display: none;">
-                    <!-- Puedes añadir aquí los platos de fondo siguiendo la misma estructura que las entradas -->
+                <!-- NUEVO: Postre 7 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800"
+                            alt="Helado Artesanal">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Helado Artesanal</h2>
+                        <p class="ref-card-desc">Fresa silvestre y albahaca fresca.</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$18.00</span>
+                        </div>
+                    </div>
+                </article>
 
-                    <article class="product-card">
-                        <div class="card-image-wrapper">
-                            <span class="badge-especial">RESERVA PRIVADA</span>
-                            <img src="https://s2-casavogue.glbimg.com/YpTtpPaUhRGc0KQlRmuWNbVU9qY=/0x0:1500x1000/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2025/g/9/ebqA32QFurBdesiW57hQ/churrasco.jpg"
+                <!-- NUEVO: Postre 8 -->
+                <article class="ref-card product-trigger">
+                    <figure class="ref-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&q=80&w=800"
+                            alt="Volcán de Chocolate">
+                    </figure>
+                    <div class="ref-card-content">
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Volcán Piurano</h2>
+                        <p class="ref-card-desc">Cacao orgánico de Piura, centro líquido.</p>
+                        <div class="ref-card-footer" style="border:none; padding-top:0;">
+                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$28.00</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- BEBIDAS (La Cava Ancestral) -->
+        <div id="bebidas" class="editorial-category menu-category" style="display: none;">
+            <div class="category-header" style="text-align: left; max-width: 100%; margin-left: 0;">
+                <span
+                    style="font-family: var(--fuente-cuerpo); color: var(--oro-champagne); font-size: 0.8rem; font-weight: 600; letter-spacing: 2px;">COLECCIÓN
+                    EXCLUSIVA</span>
+                <h1 class="category-title" style="font-size: 5rem; margin-top: 10px;">La Cava<br><i
+                        style="font-style: italic;">Ancestral</i></h1>
+                <p class="category-subtitle" style="max-width: 500px;">A highly curated selection of our most exquisite
+                    vintages. Each bottle tells the story of our heritage terroir, crafted with meticulous precision for
+                    the discerning palate.</p>
+            </div>
+
+            <div class="layout-cava">
+                <div class="cava-top">
+                    <div class="cava-hero">
+                        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=800"
+                            alt="Cava" class="cava-hero-img">
+                        <div class="cava-hero-card">
+                            <span class="editorial-badge"
+                                style="position:relative; top:auto; left:auto; margin-bottom:25px; display:inline-block;">RESERVA
+                                ESPECIAL 2015</span>
+                            <h2 class="ref-card-title" style="font-size: 2.2rem; margin-bottom: 20px;">Gran
+                                Patrimonio<br>Malbec</h2>
+                            <p class="ref-card-desc" style="font-size: 0.9rem;">Harvested by hand under the light of the
+                                full moon. This extraordinary vintage presents deep notes of black cherry, roasted
+                                cacao, and a whisper of smoked cedar from our century-old barrels.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+                                <span class="ref-card-price"
+                                    style="font-size:1.8rem; color: #333; font-weight: 400; font-family: var(--fuente-titulos);">$185</span>
+                                <button class="btn-confirm"
+                                    style="width:auto; margin:0; padding:15px 30px; font-size: 0.7rem; letter-spacing: 1px;">Añadir
+                                    a la Cava</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cava-sidebar">
+                        <h3 style="display:flex; align-items:baseline; gap:10px;">Tu Selección <span
+                                style="font-size:0.6rem; color:#999; font-family: var(--fuente-cuerpo); letter-spacing: 1px;">3
+                                ARTÍCULOS</span></h3>
+                        <div class="sidebar-item">
+                            <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=50"
+                                style="width:40px; height:50px; object-fit:contain; background:#F4F1E9;">
+                            <span class="sidebar-item-name"
+                                style="flex:1; margin-left:15px; font-size:0.8rem; font-weight:600;">Chardonnay
+                                Valle<br>Blanco</span>
+                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">$65</span>
+                        </div>
+                        <div class="sidebar-item">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-krug-1560259100.jpg?resize=640:*"
+                                style="width:40px; height:50px; object-fit:contain; background:#F4F1E9;">
+                            <span class="sidebar-item-name"
+                                style="flex:1; margin-left:15px; font-size:0.8rem; font-weight:600;">Pinot Noir
+                                Edición<br>Laderas</span>
+                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">$480</span>
+                        </div>
+                        <div class="cava-total">
+                            <span
+                                style="font-family: var(--fuente-cuerpo); font-size: 0.9rem; color: #666;">Subtotal</span>
+                            <span style="font-size: 1.2rem;">$545</span>
+                        </div>
+                        <div class="cava-total" style="border:none; margin-top:5px; padding-top:0;">
+                            <span style="font-family: var(--fuente-titulos); font-size: 1.5rem;">Total</span>
+                            <span style="font-size: 1.5rem;">$545</span>
+                        </div>
+                        <button class="btn-confirm">CONFIRMAR SELECCIÓN →</button>
+                    </div>
+                </div>
+
+                <div class="cava-bottom-grid">
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800"
+                                alt="Chardonnay" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Chardonnay<br>Valle Blanco</h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">MARIDAJE
+                                        PERFECTO</span>
+                                </div>
+                                <span class="ref-card-price" style="font-size: 1.1rem;">$65</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-krug-1560259100.jpg?resize=640:*"
+                                alt="Pinot Noir" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Pinot Noir<br>Edición Laderas
+                                    </h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">TERROIR
+                                        ÚNICO</span>
+                                </div>
+                                <span class="ref-card-price" style="font-size: 1.1rem;">$85</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-petrus-1560258670.jpg?resize=640:*"
+                                alt="Rosé" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Rosé<br>Brisa Marina</h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">MARIDAJE
+                                        PERFECTO</span>
+                                </div>
+                                <span class="ref-card-price" style="font-size: 1.1rem;">$55</span>
+                            </div>
+                    </article>
+
+                    <!-- NUEVO: Cava 4 con Descuento -->
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://www.sedovin.com/blog-sedovin/wp-content/uploads/2024/05/bot.oloroso_t.a.nueva_-scaled.jpg"
+                                alt="Cabernet Sauvignon" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Cabernet<br>Sauvignon 2018</h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">RESERVA</span>
+                                </div>
+                                <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                                    <span class="price-discount" style="font-size: 0.9rem;">$120</span>
+                                    <span class="ref-card-price" style="font-size: 1.1rem;">$95</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NUEVO: Cava 5 -->
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://ewine.cl/3053-thickbox_default/syrah-reserva-privada-vina-aromo.jpg"
+                                alt="Syrah" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Syrah<br>Valle Sagrado</h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">EXCLUSIVO</span>
+                                </div>
+                                <span class="ref-card-price" style="font-size: 1.1rem;">$145</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NUEVO: Cava 6 -->
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper"
+                            style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_938512-MLA93179765543_092025-O.webp"
+                                alt="Merlot" style="object-fit:contain;">
+                        </figure>
+                        <div class="ref-card-content" style="padding: 20px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                <div>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Merlot<br>Tinto Fino</h2>
+                                    <span
+                                        style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">TERROIR</span>
+                                </div>
+                                <span class="ref-card-price" style="font-size: 1.1rem;">$85</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESPECIALES (Menú Degustación) -->
+        <div id="especiales" class="editorial-category menu-category" style="display: none;">
+            <div class="category-header">
+                <h1 class="category-title">Menú de Degustación</h1>
+                <p class="category-subtitle">Una selección curada de la más alta gastronomía, diseñada para despertar
+                    los sentidos y celebrar el patrimonio culinario.</p>
+            </div>
+
+            <div class="layout-degustacion">
+                <div class="ref-card-wrapper">
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper">
+                            <img src="https://www.wisdomlib.org/uploads/recipes/pepper-grilled-scallops-6499.jpg"
                                 alt="Vieiras al Trufado">
-                        </div>
-                        <div class="card-info">
-                            <h2>Corazón de Lomo al Malbec y Texturas de Tierra</h2>
-                            <span class="price"> S/ 115.00</span>
-                            <p>Corte premium de lomo fino sellado a la brasa, bañado en una reducción de Malbec y frutos
-                                rojos,
-                                acompañado de un puré aterciopelado de papas nativas y vegetales orgánicos baby.</p>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1636474498689-27e2d3ecf8d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBob3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="Tartar de Salmón">
-                        </div>
-                        <div class="card-info">
-                            <h2>Magret de Pato con Reducción de Higos y Lavanda</h2>
-                            <span class="price">S/ 155.00</span>
-                            <p>Pechuga de pato de granja cocida a baja temperatura, servida con una salsa melosa de
-                                higos
-                                frescos y un toque sutil de lavanda, sobre una cama de risotto de quinua blanca.</p>
+                        </figure>
+                        <div class="ref-card-content" style="text-align: center;">
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Vieiras al Trufado</h2>
+                            <p class="ref-card-desc">Vieiras patagónicas selladas, puré de coliflor trufado y aceite
+                                verde.</p>
+                            <span class="ref-card-price"
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$42</span>
                         </div>
                     </article>
-
-                    <article class="product-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://thumbs.dreamstime.com/b/high-quality-food-photograph-captures-beautifully-plated-dish-grilled-salmon-accompanied-quinoa-asparagus-all-set-364637692.jpg"
-                                alt="Ceviche Clásico">
-                        </div>
-                        <div class="card-info">
-                            <h2>Róbalo Real en Costra de Sal de Marass</h2>
-                            <span class="price">S/ 213.00</span>
-                            <p>Filete de róbalo salvaje en costra de sal ancestral y finas hierbas, acompañado de
-                                espárragos
-                                verdes de Huacho a la parrilla y una beurre blanc de cítricos amazónicos.</p>
-                        </div>
-                    </article>
-                    <h2
-                        style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #333;">
-                        Pronto: Nuestra selección de Postres</h2>
                 </div>
+                <div class="ref-card-wrapper">
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=800"
+                                alt="Tartar de Salmón">
+                        </figure>
+                        <div class="ref-card-content" style="text-align: center;">
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Tartar de Salmón</h2>
+                            <p class="ref-card-desc">Salmón fresco, emulsión de aguacate, alcaparras y crujiente de
+                                sésamo.</p>
+                            <span class="ref-card-price"
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$38</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="ref-card-wrapper">
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                                alt="Corazón de Lomo">
+                        </figure>
+                        <div class="ref-card-content" style="text-align: center;">
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Corazón de Lomo</h2>
+                            <p class="ref-card-desc">Corte magro a la parrilla, demi-glace de vino tinto y vegetales
+                                baby orgánicos.</p>
+                            <span class="ref-card-price"
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$65</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="ref-card-wrapper">
+                    <article class="ref-card product-trigger">
+                        <figure class="ref-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=800"
+                                alt="Ravioli Artesanal">
+                        </figure>
+                        <div class="ref-card-content" style="text-align: center;">
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Ravioli Artesanal</h2>
+                            <p class="ref-card-desc">Relleno de ricotta y espinaca, mantequilla de salvia y crocante de
+                                parmesano.</p>
+                            <span class="ref-card-price"
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$45</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- ==========================================================================
+         NUEVO: PIE DE PÁGINA (FOOTER)
+         Añadido para cumplir el requerimiento de Logos referenciales, redes sociales
+         y enlaces legales con estética Quiet Luxury.
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Título / Logo del Footer -->
+            <h2 class="footer-logo">Origen Selecto</h2>
+
+            <!-- Enlaces de texto solicitados en el mockup -->
+            <div class="footer-links">
+                <a href="#">PRIVACIDAD</a>
+                <a href="#">TÉRMINOS DE SERVICIO</a>
+                <a href="#">ALIANZAS</a>
+                <a href="#">SOSTENIBILIDAD</a>
+            </div>
+
+            <!-- Logos referenciales de empresas (Requerimiento) -->
+            <div class="footer-reference-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Michelin_star.svg/1200px-Michelin_star.svg.png"
+                    alt="Michelin Star" class="ref-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/The_World%27s_50_Best_Restaurants_logo.svg/1200px-The_World%27s_50_Best_Restaurants_logo.svg.png"
+                    alt="The World's 50 Best" class="ref-logo"
+                    style="filter: grayscale(100%) brightness(0); opacity: 0.7;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Relais_%26_Ch%C3%A2teaux_logo.svg/2560px-Relais_%26_Ch%C3%A2teaux_logo.svg.png"
+                    alt="Relais Chateaux" class="ref-logo">
+            </div>
+
+            <!-- Copyright -->
+            <p class="footer-copyright">© 2024 ORIGEN SELECTO. PATRIMONIO GASTRONÓMICO.</p>
+
+            <!-- Redes sociales (3 iconos con hipervínculos) -->
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <!-- Icono SVG de Instagram -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <!-- Icono SVG de LinkedIn -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <!-- Icono SVG de Facebook -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL / LIGHTBOX HTML -->
+    <div id="editorial-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Imagen ampliada del plato">
+                <div class="modal-text">
+                    <h2 id="modal-title" class="category-title" style="font-size: 3rem; margin-bottom: 20px;"></h2>
+                    <span id="modal-price" class="ref-card-price"
+                        style="font-size: 2rem; display: block; margin-bottom: 30px;"></span>
+                    <p id="modal-desc" class="ref-card-desc" style="font-size: 1rem;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // ---------------------------------------------------------
-        // SCRIPT DE NAVEGACIÓN ENTRE CATEGORÍAS (PESTAÑAS)
-        // ---------------------------------------------------------
-
-        // 'DOMContentLoaded' asegura que nuestro código JavaScript solo empiece a 
-        // funcionar una vez que todo el HTML de la página haya sido descargado y leído.
-        // Si no hacemos esto, el script podría intentar buscar elementos antes de que existan.
         document.addEventListener('DOMContentLoaded', () => {
-
-            // PASO 1: LOCALIZAR Y GUARDAR LOS ELEMENTOS
-            // Usamos querySelectorAll para buscar múltiples cosas a la vez en base a sus clases CSS.
-
-            // Guardamos todos los enlaces de nuestro menú (las palabras en las que hacemos clic) en la variable 'links'.
+            // NAVEGACIÓN ENTRE CATEGORÍAS
             const links = document.querySelectorAll('.category-list a');
-
-            // Guardamos todas las grandes "cajas" (divs) que agrupan nuestros platos en la variable 'categories'.
             const categories = document.querySelectorAll('.menu-category');
 
-            // PASO 2: ASIGNAR ACCIONES A CADA ENLACE
-            // forEach nos permite recorrer nuestra variable 'links', dándole a cada enlace una instrucción.
             links.forEach(link => {
-
-                // addEventListener le indica a la computadora: "Escucha el evento de 'clic' para este enlace".
                 link.addEventListener('click', (e) => {
-
-                    // e.preventDefault() cancela el comportamiento por defecto del enlace. 
-                    // Normalmente, un enlace con "#" haría que la página "salte" visualmente de golpe o se recargue. 
-                    // Queremos evitar eso porque preferimos que los cambios sean suaves e instantáneos.
                     e.preventDefault();
 
-                    // PASO 3: CAMBIAR LA APARIENCIA DE LA PESTAÑA ACTIVA
-                    // Primero, hacemos un recorrido rápido para "apagar" todos los enlaces: 
-                    // les quitamos la clase 'active-category' (que probablemente les da un color distinto o subrayado).
                     links.forEach(l => l.classList.remove('active-category'));
-
-                    // Luego, "encendemos" solo el enlace al que el usuario le acaba de hacer clic,
-                    // añadiéndole la clase 'active-category'.
                     link.classList.add('active-category');
 
-                    // PASO 4: AVERIGUAR QUÉ CONTENEDOR DEBEMOS MOSTRAR
-                    // Los enlaces dicen algo como href="#platos-fondo".
-                    // Con getAttribute("href") obtenemos ese texto entero ("#platos-fondo").
-                    // Con .substring(1) borramos el carácter en la posición 0 (es decir, cortamos el "#")
-                    // y nos quedamos puramente con la palabra: "platos-fondo".
                     const targetId = link.getAttribute('href').substring(1);
 
-                    // PASO 5: MOSTRAR u OCULTAR LAS CATEGORÍAS SEGÚN CORRESPONDA
-                    // Usamos forEach de nuevo para revisar cada una de las "cajas" de contenido (Entradas, Postres, etc.).
                     categories.forEach(cat => {
-
-                        // Preguntamos: ¿El 'id' (identificador) de esta caja coincide con la palabra que obtuvimos en el paso 4?
                         if (cat.id === targetId) {
-                            // SI COINCIDE: Quitamos la regla "display: none" para que el CSS vuelva a dibujarlo 
-                            // (se vuelve visible para el usuario).
-                            cat.style.display = '';
+                            cat.style.display = ''; // Vacío para que use el flex del CSS
                         } else {
-                            // SI NO COINCIDE: Forzamos a la caja a ocultarse poniéndole "display: none".
                             cat.style.display = 'none';
                         }
+                    });
+                });
+            });
 
-                    }); // Fin del bucle forEach de categorías
-                }); // Fin del evento de click
-            }); // Fin del bucle forEach de enlaces
-        }); // Fin del DOMContentLoaded
+            // LÓGICA DEL LIGHTBOX / MODAL
+            const triggers = document.querySelectorAll('.product-trigger');
+            const modal = document.getElementById('editorial-modal');
+            const closeBtn = document.querySelector('.modal-close-btn');
+
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            const modalPrice = document.getElementById('modal-price');
+            const modalDesc = document.getElementById('modal-desc');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Intentamos buscar la tarjeta base
+                    const card = trigger.closest('.ref-card') || trigger.closest('.cava-hero-card') || trigger.closest('.product-trigger');
+
+                    if (card) {
+                        // Extracción de datos con los nuevos selectores
+                        const imgEl = card.querySelector('img') || trigger.querySelector('img') || card.parentElement.querySelector('img');
+                        const imgSrc = imgEl ? imgEl.src : '';
+
+                        const titleEl = card.querySelector('.ref-card-title');
+                        const title = titleEl ? titleEl.textContent : '';
+
+                        const priceEl = card.querySelector('.ref-card-price');
+                        const price = priceEl ? priceEl.textContent : '';
+
+                        const descEl = card.querySelector('.ref-card-desc');
+                        const desc = descEl ? descEl.textContent : '';
+
+                        modalImg.src = imgSrc;
+                        // Si la imagen tenía filtro BW, en el modal lo quitamos
+                        modalImg.style.filter = 'none';
+                        modalTitle.textContent = title;
+                        modalPrice.textContent = price;
+                        modalDesc.textContent = desc;
+
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // ==========================================================================
+            // NUEVO: LÓGICA DEL SLIDER DE PORTADA
+            // Controla el cambio automático de las 4 imágenes requeridas.
+            // ==========================================================================
+            const sliderItems = document.querySelectorAll('.slider-item');
+            let currentSlide = 0; // Inicia en la primera imagen (índice 0)
+
+            // Función que cambia a la siguiente imagen
+            const nextSlide = () => {
+                // 1. Quitar la clase 'active' de la imagen actual (la oculta con CSS fade)
+                sliderItems[currentSlide].classList.remove('active');
+
+                // 2. Calcular cuál es la siguiente imagen (vuelve al inicio si llega al final)
+                currentSlide = (currentSlide + 1) % sliderItems.length;
+
+                // 3. Poner la clase 'active' a la nueva imagen (la muestra con CSS fade)
+                sliderItems[currentSlide].classList.add('active');
+            };
+
+            // Ejecutar la función nextSlide cada 4000 milisegundos (4 segundos)
+            setInterval(nextSlide, 4000);
+
+        });
     </script>
 </body>
 

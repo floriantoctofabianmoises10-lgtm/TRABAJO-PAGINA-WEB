@@ -90,19 +90,48 @@ body {
 }
 
 /* ==========================================================================
-   4. SECCIÓN HERO (100vw y 100vh)
+   4. SECCIÓN HERO (100vw y 100vh) - AHORA SLIDER
    ========================================================================== */
 .hero {
     position: relative;
     width: 100%;
     height: 100vh; /* 100% del alto de la pantalla (Viewport Height) */
-    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Imagen de fondo */
-    background-size: cover; /* Cubre todo el espacio sin deformarse */
-    background-position: center; /* Centra la imagen */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden; /* IMPORTANTE: Oculta partes de la imagen si se salen de la pantalla */
+}
+
+/* ==========================================================================
+   NUEVO CSS: ESTRUCTURA DEL SLIDER DE IMÁGENES
+   Se crean clases para manejar las múltiples imágenes en la portada.
+   ========================================================================== */
+.slider-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Se asegura de estar detrás del texto (.hero-content) */
+}
+
+/* Clase base para cada imagen del slider */
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Asegura que la imagen llene el espacio sin deformarse */
+    background-position: center; /* Centra la imagen */
+    opacity: 0; /* Oculta todas las imágenes inicialmente */
+    transition: opacity 1.5s ease-in-out; /* Genera un efecto 'fade' (desvanecimiento) de 1.5s entre imágenes */
+}
+
+/* Esta clase se añade por Javascript a la imagen actual para hacerla visible */
+.slider-item.active {
+    opacity: 1; 
 }
 
 /* Oscurece la imagen de fondo para que el texto resalte */
@@ -211,7 +240,7 @@ body {
 /* ==========================================================================
    8. ETIQUETAS DESTACADAS (Badges Quiet Luxury)
    ========================================================================== */
-.badge-especial {
+.editorial-badge {
     position: absolute;
     top: 15px; /* Separación sutil desde arriba */
     left: 15px; /* Separación sutil desde la izquierda */
@@ -269,4 +298,489 @@ body {
 .card-info p {
     font-size: 0.9rem;
     color: #666;
+}
+
+/* ==========================================================================
+   BLOQUE 2: CSS (Diseño Editorial "Quiet Luxury")
+   ========================================================================== */
+
+/* 2. CATEGORÍA GENERAL: Espacio Negativo */
+.editorial-category {
+  display: flex;
+  flex-direction: column;
+  gap: 120px; 
+  padding: 80px 5%;
+  background-color: var(--crema-marfil);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 3. TARJETA BASE REFERENCIAL (.ref-card) */
+.ref-card {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+.ref-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.ref-card-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1; /* Cuadrado perfecto para la mayoría */
+  overflow: hidden;
+  position: relative;
+  background-color: #F9F9F9; /* Fondo muy tenue si la imagen tiene transparencia */
+}
+.ref-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+.ref-card:hover .ref-card-img-wrapper img {
+  transform: scale(1.05);
+}
+.ref-card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ref-card-title {
+  font-family: var(--fuente-titulos);
+  font-size: 1.8rem;
+  color: var(--azul-medianoche);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.ref-card-desc {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex: 1;
+}
+.ref-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+}
+.ref-card-price {
+  font-family: var(--fuente-titulos);
+  color: var(--oro-champagne);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.ref-card-add {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: 300;
+}
+
+/* 4. LAYOUT 1: LA COLECCIÓN (3 Columnas, Centro Desfasado, Blanco y Negro) */
+.layout-coleccion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center; /* Permite que el centro crezca sin estirar los otros */
+  margin-top: 40px;
+}
+.layout-coleccion .ref-card-img-wrapper img {
+  filter: grayscale(100%);
+}
+.layout-coleccion .ref-card:hover .ref-card-img-wrapper img {
+  filter: grayscale(0%);
+}
+.layout-coleccion .featured-card {
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.layout-coleccion .featured-card:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+.layout-coleccion .featured-card .ref-card-img-wrapper {
+  aspect-ratio: 4/5; /* Un poco más vertical para la destacada */
+}
+
+/* Layout Platos (Misma estructura que Colección, sin B/N) */
+.layout-platos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+.layout-platos .featured-card {
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.layout-platos .featured-card:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+.layout-platos .featured-card .ref-card-img-wrapper {
+  aspect-ratio: 4/5;
+}
+
+/* 5. LAYOUT 2: POSTRES DE AUTOR (4 Columnas Limpias) */
+.layout-postres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+.price-discount {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+/* 6. LAYOUT 3: MENÚ DEGUSTACIÓN (4 Columnas Staggered/Escalonadas) */
+.layout-degustacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+  padding-bottom: 60px; /* Espacio para el staggered */
+}
+.layout-degustacion .ref-card {
+  transition: transform 0.3s ease;
+}
+.layout-degustacion .ref-card-wrapper:nth-child(even) {
+  transform: translateY(60px);
+}
+/* Al hacer hover en un elemento escalonado, debemos mantener su translateY y sumar el de hover */
+.layout-degustacion .ref-card-wrapper:nth-child(even) .ref-card:hover {
+  transform: translateY(-5px); 
+}
+
+/* 7. LAYOUT 4: LA CAVA ANCESTRAL (Hero + Sidebar) */
+.layout-cava {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 40px;
+}
+.cava-top {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+.cava-hero {
+  flex: 2;
+  position: relative;
+  display: flex;
+}
+.cava-hero-img {
+  width: 75%;
+  margin-left: auto; /* Empuja la imagen a la derecha para dar espacio a la tarjeta */
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.cava-hero-card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: white;
+  padding: 30px;
+  max-width: 280px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+.cava-sidebar {
+  flex: 1;
+  background: #FFFFFF;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+.cava-sidebar h3 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.8rem;
+  color: var(--azul-medianoche);
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+}
+.sidebar-item-name { color: var(--azul-medianoche); }
+.sidebar-item-price { color: var(--oro-champagne); font-weight: 600; }
+.cava-total {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  color: var(--azul-medianoche);
+}
+.btn-confirm {
+  width: 100%;
+  background-color: var(--azul-medianoche);
+  color: var(--crema-marfil);
+  border: none;
+  padding: 15px;
+  margin-top: 30px;
+  font-family: var(--fuente-cuerpo);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-confirm:hover { background-color: var(--oro-champagne); }
+
+.cava-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .layout-coleccion, .layout-postres, .layout-degustacion, .cava-bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .layout-coleccion .featured-card { transform: none; }
+  .layout-degustacion .ref-card-wrapper:nth-child(even) { transform: none; }
+  .cava-top { flex-direction: column; }
+  .cava-hero-img { width: 100%; }
+  .cava-hero-card { position: relative; transform: none; margin-top: -50px; left: 20px; }
+}
+@media (max-width: 768px) {
+  .layout-coleccion, .layout-postres, .layout-degustacion, .cava-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 9. MODAL / LIGHTBOX DE LUJO */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background-color: rgba(18, 24, 38, 0.95); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  background-color: var(--crema-marfil);
+  position: relative;
+  transform: translateY(30px);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0); 
+}
+
+.modal-body {
+  display: flex;
+  width: 100%;
+}
+
+.modal-body img {
+  width: 50%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.modal-text {
+  padding: 60px 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--crema-marfil);
+  font-size: 3rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+.modal-close-btn:hover { color: var(--oro-champagne); }
+
+@media (max-width: 900px) {
+  .product-editorial-card { flex-direction: column !important; gap: 40px; }
+  .editorial-image-wrapper { max-width: 100% !important; aspect-ratio: auto !important; }
+  .modal-body { flex-direction: column; }
+  .modal-body img { width: 100%; aspect-ratio: 16/9; }
+  .modal-text { width: 100%; padding: 40px 20px; text-align: center; align-items: center; }
+  .modal-close-btn { top: 10px; right: 15px; color: var(--azul-medianoche); font-size: 2.5rem; z-index: 10; }
+}
+
+/* 10. ENCABEZADOS DE CATEGORÍA (Títulos principales de cada sección) */
+.category-header {
+  text-align: center;
+  margin-bottom: 20px; /* Ya tenemos gap de 120px en la categoría, así que este margen es solo para separar un poco del primer plato */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-title {
+  font-family: var(--fuente-titulos);
+  color: var(--azul-medianoche);
+  font-size: 4rem; /* Tamaño grande y elegante como en las referencias */
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.category-subtitle {
+  font-family: var(--fuente-cuerpo);
+  color: #666; /* Gris sutil */
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   NUEVO CSS: PIE DE PÁGINA (FOOTER)
+   Sección final de la página. Estética muy limpia, tipografías elegantes
+   y estructura minimalista.
+   ========================================================================== */
+.site-footer {
+  background-color: var(--crema-marfil); /* Fondo suave */
+  border-top: 1px solid rgba(197, 160, 89, 0.3); /* Línea superior sutil dorada */
+  padding: 80px 5% 40px; /* Mucho padding arriba para respirar */
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* El nombre principal del restaurante en el footer */
+.footer-logo {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--azul-medianoche);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Lista de enlaces institucionales */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #888;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--oro-champagne); /* Hover elegante dorado */
+}
+
+/* Contenedor de logos de empresas referenciales */
+.footer-reference-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* Estilo para que los logos se vean integrados (blanco y negro o sutiles) */
+.ref-logo {
+  height: 60px; /* Altura controlada */
+  max-width: 150px;
+  object-fit: contain;
+  /* El filtro grayscale los vuelve grises/blanco y negro, 
+     opacity los hace sutiles para no robar protagonismo */
+  filter: grayscale(100%) opacity(0.6); 
+  transition: all 0.3s ease;
+}
+
+.ref-logo:hover {
+  filter: grayscale(0%) opacity(1); /* Toman color y fuerza al pasar el mouse */
+}
+
+/* Texto de derechos reservados */
+.footer-copyright {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.75rem;
+  color: #aaa;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de iconos de redes sociales */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-socials a {
+  color: var(--azul-medianoche); /* Color oscuro base */
+  transition: color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover de iconos sociales (se vuelven dorados y suben sutilmente) */
+.footer-socials a:hover {
+  color: var(--oro-champagne);
+  transform: translateY(-3px);
 }
