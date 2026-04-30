@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form">
+            <h2>Escríbenos</h2>
+            <p>
+                Nos encantaría saber de ti.
+                Déjanos tu consulta, comentario o sugerencia a través del formulario y te responderemos lo antes posible. Tú opinión nos ayuda a seguir mejorando cada día.
+            </p>
+
+            <label for="nombre">Escribe tu nombre</label>
+            <input type="text" id="nombre" class="box">
+
+            <label for="correo">Escribe tu correo</label>
+            <input type="email" id="correo" class="box">
+
+            <label for="mensaje">Escribe tu mensaje</label>
+            <textarea class="box" id="mensaje" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="imagenes/logo.svg" class="img-1" alt="">
+
+            <div class="location">
+
+                <div class="icons">
+                    <img src="imagenes/304967.svg" alt="">
+                    <p>OrigenSelecto@gmail.com</p>
+                </div>
+
+                <div class="icons">
+                    <img src="imagenes/304080.svg" alt="">
+                    <p>+51 963 258 741</p>
+                </div>
+
+                <div class="icons">
+                    <img src="imagenes/1864379.svg" alt="">
+                    <p>Av. de la Aviación 175, Miraflores</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
