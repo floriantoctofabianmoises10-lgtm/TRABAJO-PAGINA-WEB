@@ -1,0 +1,283 @@
+   /*1. VARIABLES DE CSS (Custom Properties)
+   Esto es una excelente práctica. Si el cliente pide cambiar un color, 
+   solo lo cambias aquí y se actualiza en toda la página.
+   ========================================================================== */
+   :root {
+    --azul-medianoche: #121826;
+    --oro-champagne: #C5A059;
+    --crema-marfil: #F9F7F2;
+    --blanco-puro: #FFFFFF;
+    
+    --fuente-titulos: 'Cormorant Garamond', serif;;
+    --fuente-cuerpo: 'Montserrat', sans-serif;
+    --menu-height: 100px;
+
+}
+
+/* ==========================================================================
+   2. RESETEO BÁSICO
+   Elimina los márgenes que los navegadores ponen por defecto.
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño de las cajas */
+    font-weight: 600;
+}
+
+body {
+    background-color: var(--crema-marfil);
+    color: var(--azul-medianoche);
+    font-family: var(--fuente-cuerpo);
+    line-height: 1.6;
+    font-weight: 400;
+
+}
+
+/* ==========================================================================
+   3. NAVEGACIÓN PRINCIPAL (Navbar)
+   ========================================================================== */
+.menu {
+    position: sticky; /* Lo fija en la parte superior */
+    top: 0;
+    width: 100%;
+    display: flex; /* Flexbox para alinear logo, enlaces y botón horizontalmente */
+    justify-content: space-between; /* Separa los elementos a los extremos */
+    align-items: center; /* Los centra verticalmente */
+    padding: 20px 5%;
+    background-color: rgba(249, 247, 242, 0.95); /* Crema con un poco de transparencia */
+    z-index: 1000; /* Asegura que esté por encima de todo el contenido */
+    border-bottom: 1px solid rgba(18, 24, 38, 0.1);
+    font-weight: 700;
+}
+
+.logo {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--azul-medianoche);
+}
+
+.nav-links {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex;
+    gap: 30px; /* Espacio entre los enlaces */
+    font-weight: 700;
+    
+}
+
+.nav-links a {
+    text-decoration: none; /* Quita el subrayado */
+    color: var(--azul-medianoche);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease; /* Animación suave al pasar el mouse */
+    font-weight: 700;
+   
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--oro-champagne);
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--azul-medianoche);
+    color: var(--crema-marfil);
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--fuente-cuerpo);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--oro-champagne);
+}
+
+/* ==========================================================================
+   4. SECCIÓN HERO (100vw y 100vh)
+   ========================================================================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% del alto de la pantalla (Viewport Height) */
+    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Imagen de fondo */
+    background-size: cover; /* Cubre todo el espacio sin deformarse */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Oscurece la imagen de fondo para que el texto resalte */
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(18, 24, 38, 0.6); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Coloca el texto sobre el overlay oscuro */
+    color: var(--crema-marfil);
+}
+
+.hero h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 4.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--oro-champagne);
+    margin: 0 auto; /* Centra la línea */
+}
+
+/* ==========================================================================
+   5. NAVEGACIÓN SECUNDARIA (STICKY)
+   ========================================================================== */
+.sub-nav {
+    position: sticky; /* Hace que el menú se quede pegado al hacer scroll */
+    top: 100px; /* Se pega debajo del navbar principal */
+    background-color: var(--blanco-puro);
+    padding: 15px 0;
+    border-bottom: 1px solid #EAEAEA;
+    z-index: 999;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.category-list a.active-category {
+    color: var(--oro-champagne);
+    border-bottom: 2px solid var(--oro-champagne);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   6. SECCIÓN DE PRODUCTOS (CSS Grid)
+   ========================================================================== */
+.menu-section {
+    padding: 80px 5%; /* Espaciado interno superior e inferior */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en pantallas gigantes */
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    /* Crea columnas responsivas: mínimo 300px, si hay espacio, ocupa 1 fracción (1fr) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* Espacio entre tarjetas */
+}
+
+/* ==========================================================================
+   7. TARJETAS DE PRODUCTO (Diseño y Hover)
+   ========================================================================== */
+.product-card {
+    background-color: var(--blanco-puro);
+    border: 1px solid var(--oro-champagne); /* Borde de contraste solicitado */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Prepara animaciones suaves */
+    cursor: pointer;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.product-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta 10 píxeles hacia arriba */
+    box-shadow: 0 15px 30px rgba(18, 24, 38, 0.1); /* Sombra elegante */
+}
+
+.card-image-wrapper {
+    position: relative; /* Permite posicionar las etiquetas flotantes (badges) encima de la imagen */
+    width: 100%;
+    height: 300px; /* Altura fija para todas las imágenes */
+    overflow: hidden; /* Oculta lo que se salga del contenedor al hacer zoom */
+}
+
+/* ==========================================================================
+   8. ETIQUETAS DESTACADAS (Badges Quiet Luxury)
+   ========================================================================== */
+.badge-especial {
+    position: absolute;
+    top: 15px; /* Separación sutil desde arriba */
+    left: 15px; /* Separación sutil desde la izquierda */
+    z-index: 10;
+    
+    font-family: var(--fuente-cuerpo); /* Montserrat (o similar sans-serif geométrica) */
+    font-size: 10px; /* Muy pequeño, como pediste */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; /* Amplio espaciado entre letras */
+    color: var(--oro-champagne); /* Color Champagne Gold */
+    
+    /* Contenedor: Forma perfecta y glassmorphism sutil */
+    background-color: rgba(249, 247, 242, 0.85); /* Crema Marfil semi-transparente */
+    backdrop-filter: blur(4px); /* Glassmorphism */
+    border: 1px solid var(--oro-champagne); /* Borde ultra fino de 1px sólido */
+    border-radius: 0px; /* Rectángulo perfecto arquitectónico */
+    
+    padding: 6px 14px; /* Margen interno para que 'respire' */
+    
+    pointer-events: none; /* Asegura que no tenga hover propio agresivo, mantiene la elegancia estática */
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que llene la caja sin aplastarse */
+    transition: transform 0.6s ease; /* Prepara el zoom */
+}
+
+/* Hace un zoom sutil a la imagen al hacer hover en la tarjeta */
+.product-card:hover img {
+    transform: scale(1.08); 
+}
+
+.card-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-info h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    color: var(--azul-medianoche);
+    margin-bottom: 5px;
+}
+
+.price {
+    display: block;
+    color: var(--oro-champagne);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-info p {
+    font-size: 0.9rem;
+    color: #666;
+}

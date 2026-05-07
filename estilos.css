@@ -1,0 +1,43 @@
+html {
+    overflow-y: scroll;
+}
+.menu{
+    display: flex;
+    background-color:#000d1e; 
+    padding: 15px 50px;
+    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    height: 100px; 
+    top: 0px;
+    z-index: 999;
+} 
+
+
+body{
+    margin: 0%;
+    text-rendering: optimizeLegibility;
+}
+.LOGO{
+    width: auto;
+    height: 150px;
+    vertical-align: middle;
+}
+.menu a{
+    color:#ecdeb8;
+    text-decoration:none;
+   font-family: 'Cormorant Garamond', serif;
+    font-weight: 700 ;
+}
+.menu a:hover{
+    color: white;
+}
+.Links{
+    display:flex;
+    gap:30px;
+    font-size: 20px;
+     font-family: 'Cormorant Garamond', serif ;
+    font-weight: 700 ;
+}
+
