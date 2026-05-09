@@ -489,35 +489,38 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .cava-top {
   display: flex;
   gap: 40px;
   align-items: stretch;
 }
-.cava-hero {
+.cava-hero{
   flex: 2;
   position: relative;
   display: flex;
+  width: 60%;
 }
 .cava-hero-img {
   width: 75%;
   margin-left: auto; /* Empuja la imagen a la derecha para dar espacio a la tarjeta */
-  aspect-ratio: 3/4;
-  object-fit: cover;
+  aspect-ratio: 3/2;
+  margin-bottom: 10%;
 }
-.cava-hero-card {
+.cava-hero-card{
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 40%;
+  left: 0%;
   transform: translateY(-50%);
   background: white;
   padding: 30px;
   max-width: 280px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   z-index: 2;
+ 
 }
+
 .cava-sidebar {
   flex: 1;
   background: #FFFFFF;
@@ -572,6 +575,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-top:10%;
 }
 
 @media (max-width: 1024px) {
