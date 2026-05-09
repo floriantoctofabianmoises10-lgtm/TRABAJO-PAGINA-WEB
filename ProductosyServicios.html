@@ -9,11 +9,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+ <div class="site-wrapper">
+      
 
     <nav class="navbar">
         <div class="logo">Origen Selecto</div>
@@ -78,115 +81,127 @@
                     geométrica y respeto por el origen.</p>
             </div>
             <div class="layout-coleccion">
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Papa amarilla, pollo cremoso, palta y un acabado fresco y delicado.
+Pop-up: Elaborada con papa amarilla prensada y sazonada con limón y ají, esta causa limeña reúne un relleno suave de pollo deshilachado, mayonesa ligera y palta fresca. Su textura cremosa, su color vibrante y su presentación prolija la convierten en una entrada clásica peruana con gran atractivo visual.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://images.pexels.com/photos/28490827/pexels-photo-28490827.jpeg?_gl=1*1ydjak8*_ga*Njg2NDg5NDcxLjE3Nzc4NTMzMDA.*_ga_8JE65Q40S6*czE3NzgzMDE1MjIkbzIkZzEkdDE3NzgzMDE1NzAkajEyJGwwJGgw"
                             alt="Vieiras de Altamar">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Vieiras de Altamar</h2>
-                        <p class="ref-card-desc">Cítricos ahumados, emulsión de algas y polvo de pistacho tostado en
-                            fuego...</p>
+                        <h2 class="ref-card-title">Causa Acevichada</h2>
+                        <p class="ref-card-desc">Papa amarilla coronada con pesca marinada y salsa acevichada.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 45.00</span>
+                            <span class="ref-card-price">S/ 45.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="ref-card featured-card product-trigger">
+                <article class="ref-card featured-card product-trigger"
+                    data-description-long="Entrada esencial de la gastronomía peruana, servida con papas cocidas y una salsa cremosa hecha con ají amarillo, queso fresco, leche y galleta. Su perfil suave, ligeramente picante y muy reconocible la vuelve ideal para una carta amplia. Se completa con huevo duro y aceituna negra para respetar su identidad tradicional.">
                     <figure class="ref-card-img-wrapper">
                         <span class="editorial-badge" style="z-index: 20; position: absolute;">EDICIÓN LIMITADA</span>
-                        <img src="https://martiko.com/wp-content/uploads/2024/12/Jamon-de-pato-y-carpaccio-de-champi.jpg"
+                        <img src="https://images.pexels.com/photos/28448378/pexels-photo-28448378.jpeg?_gl=1*trvkoz*_ga*Njg2NDg5NDcxLjE3Nzc4NTMzMDA.*_ga_8JE65Q40S6*czE3NzgzMDE1MjIkbzIkZzEkdDE3NzgzMDE4MDAkajQ2JGwwJGgw"
                             alt="Carpaccio Curado">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Carpaccio Curado</h2>
-                        <p class="ref-card-desc">Láminas finas de wagyu, sal negra, trufa blanca y alcaparras fritas.
+                        <h2 class="ref-card-title">Huancaína Noble</h2>
+                        <p class="ref-card-desc">Papas nativas con crema de huacatay, queso y maní tostado.
                         </p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 68.00</span>
+                            <span class="ref-card-price">S/ 68.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Intensa, fresca y profundamente peruana, esta leche de tigre concentra el sabor del cebiche en una presentación más directa y vibrante. Combina fondo marino, limón, ají, culantro y pequeños cortes de pescado para ofrecer una entrada de gran carácter. Su perfil ácido, especiado y refrescante le da excelente presencia dentro del menú.">
+                    
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://images.pexels.com/photos/28490842/pexels-photo-28490842.jpeg?_gl=1*1o6t7va*_ga*Njg2NDg5NDcxLjE3Nzc4NTMzMDA.*_ga_8JE65Q40S6*czE3NzgzMDE1MjIkbzIkZzEkdDE3NzgzMDIzNjEkajMzJGwwJGgw"
                             alt="Pan Madre de Finca">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Pan Madre de Finca</h2>
-                        <p class="ref-card-desc">Fermentación prolongada, mantequilla clarificada y sal de maras.</p>
+                        <h2 class="ref-card-title">Leche de Tigre Selecta</h2>
+                        <p class="ref-card-desc">Concentrado cítrico de cebiche con pesca, culantro y ají peruano.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 22.00</span>
+                            <span class="ref-card-price">S/ 22.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
                 <!-- NUEVO: Producto extra 1 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Preparado con pesca del día marinada al momento en limón fresco, ají limo y cebolla morada, este clásico peruano resalta por su frescura, acidez equilibrada y perfil limpio. Se acompaña con camote glaseado, choclo tierno y el carácter vibrante de la cocina costera en una presentación refinada y actual.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://cdn.pixabay.com/photo/2020/07/11/16/18/food-5394577_1280.jpg"
                             alt="Ceviche de Origen">
                     </figure>
                     <div class="ref-card-content">
                         <h2 class="ref-card-title">Ceviche de Origen</h2>
-                        <p class="ref-card-desc">Pesca del día curada en cítricos andinos con emulsión de ají amarillo.
+                        <p class="ref-card-desc">Pesca fresca, limón, ají limo, cebolla morada y guarniciones
+                            tradicionales peruanas.
                         </p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 35.00</span>
+                            <span class="ref-card-price">S/ 35.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Producto extra 2 con Descuento -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Esta entrada destaca por su textura crujiente y su perfil marino directo. Los calamares se fríen con cobertura ligera para conservar suavidad en el interior y un dorado uniforme por fuera. Acompañados de limón y salsa cremosa, logran una combinación clásica, vistosa y muy compatible con una propuesta de restaurante peruano contemporáneo.">
+                
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://images.pexels.com/photos/29721138/pexels-photo-29721138.jpeg?_gl=1*1jjomfd*_ga*Njg2NDg5NDcxLjE3Nzc4NTMzMDA.*_ga_8JE65Q40S6*czE3NzgzMDE1MjIkbzIkZzEkdDE3NzgzMDI1NDIkajM5JGwwJGgw"
                             alt="Tartar del Bosque">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Tartar del Bosque</h2>
-                        <p class="ref-card-desc">Setas silvestres, trufa negra y yema de codorniz curada en soya.</p>
+                        <h2 class="ref-card-title">Chicharrón del Mar</h2>
+                        <p class="ref-card-desc">Calamar crocante con limón, salsa tártara y acabado dorado.</p>
                         <div class="ref-card-footer">
                             <!-- Aquí usamos la clase de descuento -->
-                            <span class="price-discount">$ 45.00</span>
-                            <span class="ref-card-price">$ 38.00</span>
+                            <span class="price-discount">S/ 45.00</span>
+                            <span class="ref-card-price">S/ 38.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Producto extra 3 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Emblema de la cocina criolla peruana, estos anticuchos se preparan con corazón de res marinado en ají panca, ajo, vinagre y especias. La cocción a la brasa aporta carácter ahumado y jugosidad, mientras las papas y el choclo equilibran el plato. Una entrada intensa, tradicional y de enorme reconocimiento gastronómico.">
+                
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.squarespace-cdn.com/content/v1/624fa63d5ba99559345806e6/47c2b7e1-9703-408d-9dda-07825ba3ef00/EG8_EP43_Pulpo-al-Olivo_67645e919b12432e590b303456de6e74.jpg"
+                        <img src="https://i.pinimg.com/1200x/4d/7a/76/4d7a76498ca59f81b77948fce30b4091.jpg"
                             alt="Pulpo al Olivo Ahumado">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Pulpo al Olivo</h2>
-                        <p class="ref-card-desc">Tentáculo braseado, crema de botija y polvo de aceituna negra.</p>
+                        <h2 class="ref-card-title">Anticuchos de Brasa Fina</h2>
+                        <p class="ref-card-desc">Brochetas de corazón marinadas al ají panca con papas doradas.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 42.00</span>
+                            <span class="ref-card-price">S/ 42.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Producto extra 4 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                    data-description-long="Esta versión adapta el sabor del lomo saltado a una empanada de acabado elegante y muy apetecible. El relleno conserva las notas jugosas de la carne, la cebolla y el tomate salteados, con un toque de sillao que le da identidad peruana. Es una entrada conocida, generosa y perfecta para compartir o abrir la experiencia gastronómica.">
+                
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/4c/13/a6/4c13a6a7c3aaf1c3622f6e51442e1640.jpg"
                             alt="Conchas al Carbón">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Conchas al Carbón</h2>
-                        <p class="ref-card-desc">Gratinadas con mantequilla de ajo negro y parmesano añejo.</p>
+                        <h2 class="ref-card-title">Empanadas de Lomo Fino</h2>
+                        <p class="ref-card-desc">Masa hojaldrada con relleno de carne, cebolla, papa y tomate salteados.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 48.00</span>
+                            <span class="ref-card-price">S/ 48.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
@@ -203,135 +218,141 @@
                     nuestra herencia gastronómica.</p>
             </div>
             <div class="layout-platos">
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Uno de los íconos absolutos de la cocina peruana. Este lomo saltado reúne trozos de carne jugosa salteados a fuego alto con cebolla roja, tomate y sillao, logrando un fondo intenso y aromático. Se acompaña con papas fritas doradas y arroz blanco, en una presentación elegante que mantiene toda su identidad criolla.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://images.pexels.com/photos/28503590/pexels-photo-28503590.jpeg?_gl=1*gt8hjt*_ga*Njg2NDg5NDcxLjE3Nzc4NTMzMDA.*_ga_8JE65Q40S6*czE3NzgzMDE1MjIkbzIkZzEkdDE3NzgzMDM1OTQkajU5JGwwJGgw"
                             alt="Lomo Vetado">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Lomo Vetado</h2>
-                        <p class="ref-card-desc">Corte premium con costra de hierbas andinas y reducción de vino tinto.
+                        <h2 class="ref-card-title">Lomo de Brasa Limeña</h2>
+                        <p class="ref-card-desc">Lomo salteado al wok con cebolla, tomate, papas doradas y arroz blanco.
                         </p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 85.00</span>
+                            <span class="ref-card-price">S/ 85.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 2 con Descuento -->
-                <article class="ref-card featured-card product-trigger">
+                <article class="ref-card featured-card product-trigger"
+                data-description-long="Clásico limeño de textura cremosa y sabor reconfortante, preparado con pollo deshilachado en una salsa sedosa de ají amarillo, pan, leche y queso. Se sirve sobre papa cocida y se acompaña con arroz blanco, huevo duro y aceituna. Es un plato tradicional, elegante y profundamente representativo de la cocina peruana.">
                     <figure class="ref-card-img-wrapper">
                         <span class="editorial-badge" style="z-index: 20; position: absolute;">TOP VENTAS</span>
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/c2/ce/af/c2ceaf649265251719eb4317c51e2852.jpg"
                             alt="Costillas Glaseadas">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Costillas Glaseadas</h2>
-                        <p class="ref-card-desc">Cocción lenta por 24 horas, puré rústico y demi-glace de chicha de
-                            jora.</p>
+                        <h2 class="ref-card-title">Ají Real de Gallina</h2>
+                        <p class="ref-card-desc">Pollo deshilachado en crema de ají amarillo, papa y arroz.</p>
                         <div class="ref-card-footer">
-                            <span class="price-discount">$ 95.00</span>
-                            <span class="ref-card-price">$ 75.00</span>
+                            <span class="price-discount">S/ 95.00</span>
+                            <span class="ref-card-price">S/ 75.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 3 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Muy presente en la mesa peruana, este arroz con pollo combina granos sueltos y sabrosos teñidos con culantro, acompañados de pollo jugoso cocido en el mismo fondo. Se complementa con arvejas, zanahoria y una fresca salsa criolla, logrando un plato colorido, familiar y con excelente presencia en una carta gourmet.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/f7/cd/e5/f7cde5e0aae89ae9f323de2338ac00c9.jpg"
                             alt="Salmón Rosado">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Salmón Rosado</h2>
-                        <p class="ref-card-desc">Piel crujiente, espárragos al grill y beurre blanc de maracuyá.</p>
+                        <h2 class="ref-card-title">Arroz Verde del Fogón</h2>
+                        <p class="ref-card-desc">Arroz al culantro con pollo jugoso, arvejas y salsa criolla.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 82.00</span>
+                            <span class="ref-card-price">S/ 82.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 4 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Esta preparación reúne la cremosidad de una salsa huancaína bien equilibrada con la fuerza del lomo salteado en wok. La pasta absorbe el ají amarillo, el queso y la textura sedosa de la salsa, mientras la carne aporta profundidad y notas tostadas. Es un fondo moderno, muy vendible y visualmente abundante.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/45/d8/4c/45d84c1d1d3dfa5560f05281bf9fd1f8.jpg"
                             alt="Risotto de Setas">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Risotto de Setas</h2>
-                        <p class="ref-card-desc">Arroz arborio, selección de setas trufadas y polvo de oro comestible.
+                        <h2 class="ref-card-title">Huancaína del Sillao</h2>
+                        <p class="ref-card-desc">Pasta en salsa huancaína con lomo salteado de perfil intenso.
                         </p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 65.00</span>
+                            <span class="ref-card-price">S/ 65.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 5 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Ícono arequipeño por excelencia, este plato combina el carácter del rocoto con un relleno sazonado de carne, cebolla, especias, aceituna y notas ligeramente dulces. Se termina al horno con un gratinado delicado que realza su presencia. Su color, volumen y contraste de sabores hacen de este fondo uno de los más vistosos y recordados.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1560684352-8497838a2229?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/5f/03/61/5f0361cfc8f1b8e2c11a200c03714e26.jpg"
                             alt="Magret de Pato">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Magret de Pato</h2>
-                        <p class="ref-card-desc">Sellado en su propia grasa, chutney de aguaymanto y vegetales baby.</p>
+                        <h2 class="ref-card-title">Rocoto Imperial de Arequipa</h2>
+                        <p class="ref-card-desc">Rocoto horneado con relleno de carne y gratinado dorado.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 88.00</span>
+                            <span class="ref-card-price">S/ 88.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 6 con Descuento -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Este plato amazónico es ampliamente conocido por su combinación de rusticidad y sabor intenso. El tacacho, elaborado con plátano verde asado y majado, se sirve junto a cecina ahumada y salsa criolla, logrando un balance entre textura firme, notas tostadas y frescura. Es ideal para incorporar una identidad selvática clara dentro del menú.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/e7/e5/2d/e7e52db30caf7e732c50bad9e5f67710.jpg"
                             alt="Tomahawk Añejado">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Tomahawk Añejado</h2>
-                        <p class="ref-card-desc">Dry aged por 45 días, chimichurri artesanal y papas andinas.</p>
+                        <h2 class="ref-card-title">Tacacho de Fuego Selvático</h2>
+                        <p class="ref-card-desc">Plátano majado con cecina ahumada y salsa criolla fresca.</p>
                         <div class="ref-card-footer">
-                            <span class="price-discount">$ 180.00</span>
-                            <span class="ref-card-price">$ 150.00</span>
+                            <span class="price-discount">S/ 180.00</span>
+                            <span class="ref-card-price">S/ 150.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 7 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Plato clásico de la cocina limeña, preparado con pollo bañado en una salsa aromática de cebolla, ají amarillo, vinagre y especias. Su mayor atractivo está en el equilibrio entre acidez suave, dulzor natural de la cebolla y textura jugosa de la proteína. Es un fondo elegante, tradicional y muy coherente con una carta peruana refinada.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/00/ea/8c/00ea8c62468f413be52771594624bac1.jpg"
                             alt="Corvina al Horno">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Corvina al Horno</h2>
-                        <p class="ref-card-desc">En costra de sal marina, vegetales de estación y aceite de oliva extra
-                            virgen.</p>
+                        <h2 class="ref-card-title">Escabeche de Tradición Limeña</h2>
+                        <p class="ref-card-desc">Pollo en salsa tibia de cebolla, ají amarillo y vinagre.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 70.00</span>
+                            <span class="ref-card-price">S/ 70.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Plato 8 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Este adobo arequipeño destaca por su fondo fragante y especiado, donde la carne de cerdo se cocina a fuego lento hasta alcanzar una textura tierna y jugosa. El uso de ajíes peruanos, chicha y hierbas aporta un sabor profundo y envolvente. Es un plato tradicional, contundente y muy representativo de la cocina del sur.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/cc/0d/28/cc0d280420c141ef3a5c41e975afdb2f.jpg"
                             alt="Pasta Trufada">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title">Pasta Trufada</h2>
-                        <p class="ref-card-desc">Fettuccine artesanal en rueda de Grana Padano y trufa negra fresca.</p>
+                        <h2 class="ref-card-title">Adobo del Alba Arequipeña</h2>
+                        <p class="ref-card-desc">Cerdo cocido lentamente en ajíes, chicha y sazón tradicional.</p>
                         <div class="ref-card-footer">
-                            <span class="ref-card-price">$ 68.00</span>
+                            <span class="ref-card-price">S/ 68.00</span>
                             <span class="ref-card-add">+</span>
                         </div>
                     </div>
@@ -343,121 +364,129 @@
         <div id="postres" class="editorial-category menu-category" style="display: none;">
             <div class="category-header">
                 <h1 class="category-title">Postres de Autor</h1>
-                <p class="category-subtitle">A culmination of ancestral techniques and modern precision, each dessert is
-                    a curated journey for the discerning palate.</p>
+                <p class="category-subtitle">Una culminacion de tecnicas ancestrales y precision moderna , cada postre es un viaje curado para el paladar exigente</p>
             </div>
             <div class="layout-postres">
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Tradicionales y profundamente peruanos, los picarones destacan por su exterior dorado y su interior tierno, elaborado con camote y zapallo. Se sirven recién hechos y bañados en miel de chancaca especiada, logrando un contraste delicioso entre textura ligera, dulzor cálido y una presentación muy reconocible dentro de la repostería criolla.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/d1/56/51/d156510c2ddb794e2ad7d8b03a2f343c.jpg"
                             alt="Sinfonía de Cacao">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Sinfonía de Cacao</h2>
-                        <p class="ref-card-desc">70% Amazonian cacao mousse, Maras salt</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Picarones de Chancaca Noble</h2>
+                        <p class="ref-card-desc">Aros dorados de masa suave bañados en miel de chancaca.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$24.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/24.00</span>
                         </div>
                     </div>
                 </article>
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Preparada con maíz morado, frutas secas y especias, esta mazamorra es uno de los grandes clásicos dulces de Lima. Su textura brillante y espesa, junto con sus notas de canela y clavo, crean un postre de gran identidad y excelente presencia visual. Ideal para mantener un perfil tradicional con estética refinada.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/50/6d/1f/506d1f56cf8c5407e6b2363b12c1653a.jpg"
                             alt="Esfera de Lúcuma">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Esfera de Lúcuma</h2>
-                        <p class="ref-card-desc">Lucuma cream, salted caramel heart</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Mazamorra morada</h2>
+                        <p class="ref-card-desc">Dulce espeso de maíz morado con frutas, canela y clavo.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$22.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/22.00</span>
                         </div>
                     </div>
                 </article>
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Arroz cremoso con leche, canela y una textura delicadamente suave.
+Pop-up: Este postre de enorme popularidad se presenta con una cocción lenta que permite lograr una textura cremosa y envolvente. El arroz, la leche, la canela y el toque justo de dulzor crean una preparación reconfortante y elegante. Es un clásico que funciona muy bien en una carta gourmet por su sencillez, nostalgia y gran aceptación.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/11/ea/9a/11ea9a052bb6177cc16f96456e150e59.jpg"
                             alt="Milhojas de Vainilla">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Milhojas de Vainilla</h2>
-                        <p class="ref-card-desc">Madagascar vanilla, forest berries</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Arroz de Leche de la Casa</h2>
+                        <p class="ref-card-desc">Arroz cremoso con leche, canela y una textura delicadamente suave.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0; justify-content: flex-start;">
-                            <span class="price-discount">$28.00</span>
-                            <span class="ref-card-price" style="font-size:1rem;">$24.00</span>
+                            <span class="price-discount">S/28.00</span>
+                            <span class="ref-card-price" style=" font-size: 1.8rem;">S/24.00</span>
                         </div>
                     </div>
                 </article>
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Dos de los postres más queridos del Perú reunidos en una sola composición. La suavidad cremosa del arroz con leche se encuentra con la intensidad especiada de la mazamorra morada, creando contraste de color, textura y sabor. Es una opción muy conocida, visualmente atractiva y perfecta para una carta con identidad limeña.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://assets.isu.pub/document-structure/220927094138-4c92440fbe07bebd5e145e370e1a646c/v1/1f164ce8fe62afaae0da8c7d4037eb1d.jpeg?width=720&quality=85%2C50"
+                        <img src="https://i.pinimg.com/1200x/6e/ff/d8/6effd8b516958c55cd4565ba630a308d.jpg"
                             alt="Sorbetes de la Selva">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Sorbetes de la Selva</h2>
-                        <p class="ref-card-desc">Seasonal Amazonian fruits</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Dúo Limeño Selecto</h2>
+                        <p class="ref-card-desc">El clásico combinado peruano en una presentación elegante y equilibrada.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$18.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/18.00</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Postre 5 con Descuento -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Este ícono de la repostería peruana combina capas de masa crujiente unidas por miel aromática y decoradas con grageas. Su perfil dulce, su valor tradicional y su fuerte identidad visual lo hacen ideal para incorporar variedad en la sección de postres. Presentado en porción elegante, mantiene toda su esencia festiva y reconocible.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/78/91/80/78918095b6e17c6a507ac90e908494cc.jpg"
                             alt="Cremoso de Maracuyá">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Cremoso de Maracuyá</h2>
-                        <p class="ref-card-desc">Pasión amazónica y tierra de cacao.</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Turrón de Octubre Imperial</h2>
+                        <p class="ref-card-desc">Bastones dulces con miel especiada y lluvia de grageas coloridas.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0; justify-content: flex-start;">
-                            <span class="price-discount">$25.00</span>
-                            <span class="ref-card-price" style="font-size:1rem;">$20.00</span>
+                            <span class="price-discount">S/25.00</span>
+                            <span class="ref-card-price" style=" font-size: 1.8rem;">S/20.00</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Postre 6 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="De textura frágil y apariencia fina, estos alfajores son un clásico muy querido en la repostería peruana. Las tapas suaves de maicena se unen con un generoso relleno de manjar blanco, logrando un equilibrio entre dulzor, ligereza y una presentación muy limpia. Son perfectos para una carta sofisticada y de amplia aceptación.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/736x/5e/85/f0/5e85f08c8d892880526a02b01f30b253.jpg"
                             alt="Texturas de Chirimoya">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Texturas de Chirimoya</h2>
-                        <p class="ref-card-desc">Espuma de chirimoya, crujiente de merengue y naranja.</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Alfajores de Nube y Manjar</h2>
+                        <p class="ref-card-desc">Galletas suaves de maicena rellenas con manjar blanco delicado.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$26.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/26.00</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Postre 7 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="Tradicional de Arequipa, este postre destaca por su textura cremosa y su sabor delicadamente especiado. Elaborado con leche, coco, canela y clavo, se sirve frío en porción firme y elegante. Su nombre lo hace memorable y su presentación resulta muy atractiva para una propuesta que quiera incluir sabores regionales del Perú con estética refinada.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/00/56/db/0056db152a040329f868344c779fe478.jpg"
                             alt="Helado Artesanal">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Helado Artesanal</h2>
-                        <p class="ref-card-desc">Fresa silvestre y albahaca fresca.</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Queso Helado del Sur</h2>
+                        <p class="ref-card-desc">Postre helado arequipeño con leche, canela y perfume especiado.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$18.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/18.00</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- NUEVO: Postre 8 -->
-                <article class="ref-card product-trigger">
+                <article class="ref-card product-trigger"
+                data-description-long="La crema volteada es uno de los postres más clásicos y visualmente elegantes. Su textura firme y delicada, combinada con una capa de caramelo brillante, crea una experiencia suave y equilibrada. Funciona muy bien en restaurante por su presentación limpia, su alta aceptación y la sensación de refinamiento que transmite con ingredientes sencillos.">
                     <figure class="ref-card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&q=80&w=800"
+                        <img src="https://i.pinimg.com/1200x/e4/ed/01/e4ed0181be9740eb225974e6f4ff6020.jpg"
                             alt="Volcán de Chocolate">
                     </figure>
                     <div class="ref-card-content">
-                        <h2 class="ref-card-title" style="font-size:1.5rem;">Volcán Piurano</h2>
-                        <p class="ref-card-desc">Cacao orgánico de Piura, centro líquido.</p>
+                        <h2 class="ref-card-title" style="font-size:1.5rem;">Crema Volteada Dorada</h2>
+                        <p class="ref-card-desc">Flan suave con caramelo brillante y textura sedosa al corte.</p>
                         <div class="ref-card-footer" style="border:none; padding-top:0;">
-                            <span class="ref-card-price" style="font-size:1rem; color: #121826;">$28.00</span>
+                            <span class="ref-card-price" style="color: #121826;">S/28.00</span>
                         </div>
                     </div>
                 </article>
@@ -470,11 +499,9 @@
                 <span
                     style="font-family: var(--fuente-cuerpo); color: var(--oro-champagne); font-size: 0.8rem; font-weight: 600; letter-spacing: 2px;">COLECCIÓN
                     EXCLUSIVA</span>
-                <h1 class="category-title" style="font-size: 5rem; margin-top: 10px;">La Cava<br><i
+                <h1 class="category-title" style="font-size: 5rem; margin-top: 10px;">Pisco Sour Origen<br><i
                         style="font-style: italic;">Ancestral</i></h1>
-                <p class="category-subtitle" style="max-width: 500px;">A highly curated selection of our most exquisite
-                    vintages. Each bottle tells the story of our heritage terroir, crafted with meticulous precision for
-                    the discerning palate.</p>
+                <p class="category-subtitle" style="max-width: 500px;">Pisco, limón, espuma sedosa y un equilibrio cítrico impecable.</p>
             </div>
 
             <div class="layout-cava">
@@ -488,16 +515,12 @@
                                 ESPECIAL 2015</span>
                             <h2 class="ref-card-title" style="font-size: 2.2rem; margin-bottom: 20px;">Gran
                                 Patrimonio<br>Malbec</h2>
-                            <p class="ref-card-desc" style="font-size: 0.9rem;">Harvested by hand under the light of the
-                                full moon. This extraordinary vintage presents deep notes of black cherry, roasted
-                                cacao, and a whisper of smoked cedar from our century-old barrels.</p>
+                            <p class="ref-card-desc" style="font-size: 0.9rem;">Aqui bajo la luz de la luna llena esta añada extraordinaria presenta notas profundas de cereza negra, cacao tostado y un susurro de cedro ahumado de nuestros viñedos centenarios </p>
                             <div
                                 style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
                                 <span class="ref-card-price"
-                                    style="font-size:1.8rem; color: #333; font-weight: 400; font-family: var(--fuente-titulos);">$185</span>
-                                <button class="btn-confirm"
-                                    style="width:auto; margin:0; padding:15px 30px; font-size: 0.7rem; letter-spacing: 1px;">Añadir
-                                    a la Cava</button>
+                                    style="font-size:3.0rem; color: #333; font-weight: 600; font-family: var(--fuente-titulos);">S/185</span>
+
                             </div>
                         </div>
                     </div>
@@ -511,7 +534,7 @@
                             <span class="sidebar-item-name"
                                 style="flex:1; margin-left:15px; font-size:0.8rem; font-weight:600;">Chardonnay
                                 Valle<br>Blanco</span>
-                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">$65</span>
+                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">S/65</span>
                         </div>
                         <div class="sidebar-item">
                             <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-krug-1560259100.jpg?resize=640:*"
@@ -519,7 +542,7 @@
                             <span class="sidebar-item-name"
                                 style="flex:1; margin-left:15px; font-size:0.8rem; font-weight:600;">Pinot Noir
                                 Edición<br>Laderas</span>
-                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">$480</span>
+                            <span class="sidebar-item-price" style="color: #333; font-weight: 400;">S/480</span>
                         </div>
                         <div class="cava-total">
                             <span
@@ -528,124 +551,133 @@
                         </div>
                         <div class="cava-total" style="border:none; margin-top:5px; padding-top:0;">
                             <span style="font-family: var(--fuente-titulos); font-size: 1.5rem;">Total</span>
-                            <span style="font-size: 1.5rem;">$545</span>
+                            <span style="font-size: 1.5rem;">S/545</span>
                         </div>
-                        <button class="btn-confirm">CONFIRMAR SELECCIÓN →</button>
+
                     </div>
                 </div>
 
                 <div class="cava-bottom-grid">
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Pisco, limón, espuma sedosa y un equilibrio cítrico impecable.
+Pop-up: El gran emblema de la coctelería peruana, presentado con una mezcla precisa de pisco, limón fresco, jarabe y espuma ligera. Su perfil combina acidez limpia, textura sedosa y un acabado elegante que lo convierte en una elección infaltable para una cava de inspiración peruana refinada.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800"
+                            <img src="https://i.pinimg.com/1200x/61/93/d3/6193d363037393191540e993077d4406.jpg"
                                 alt="Chardonnay" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Chardonnay<br>Valle Blanco</h2>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;"><br>Pisco Sour</h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">MARIDAJE
                                         PERFECTO</span>
                                 </div>
-                                <span class="ref-card-price" style="font-size: 1.1rem;">$65</span>
+                                <span class="ref-card-price" style="font-size: 2.2rem;">S/65</span>
                             </div>
                         </div>
                     </article>
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Versión más intensa del clásico peruano, con carácter y presencia.
+Pop-up: Esta variante del tradicional pisco sour ofrece una estructura más amplia y una sensación más robusta en boca. Mantiene el espíritu cítrico, espumoso y elegante del original, pero con mayor protagonismo y presencia visual. Ideal para una carta que quiera elevar un clásico sin apartarse de su identidad.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-krug-1560259100.jpg?resize=640:*"
+                            <img src="https://i.pinimg.com/1200x/ca/80/a9/ca80a904bcdd1954ceb07b79d3c2dfea.jpg"
                                 alt="Pinot Noir" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Pinot Noir<br>Edición Laderas
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;"><br>Pisco Sour Catedral
                                     </h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">TERROIR
                                         ÚNICO</span>
                                 </div>
-                                <span class="ref-card-price" style="font-size: 1.1rem;">$85</span>
+                                <span class="ref-card-price" style="font-size:2.2rem;">S/85</span>
                             </div>
                         </div>
                     </article>
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Refrescante, burbujeante y muy versátil, el chilcano combina pisco con ginger ale, limón y hielo para crear una bebida ligera y elegante. Es ideal como aperitivo o acompañamiento de entradas marinas, gracias a su carácter fresco, su sensación limpia en boca y su excelente presentación en copa alta.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/vinos-mas-caros-del-mundo-petrus-1560258670.jpg?resize=640:*"
+                            <img src="https://i.pinimg.com/736x/a6/ef/a0/a6efa0e6722cf14e3b6562f61b01a990.jpg"
                                 alt="Rosé" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Rosé<br>Brisa Marina</h2>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;"><br>Chilcano de Quebranta</h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">MARIDAJE
                                         PERFECTO</span>
                                 </div>
-                                <span class="ref-card-price" style="font-size: 1.1rem;">$55</span>
+                                <span class="ref-card-price" style="font-size:2.2rem;">S/55</span>
                             </div>
                     </article>
 
                     <!-- NUEVO: Cava 4 con Descuento -->
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Esta versión incorpora maracuyá para aportar un perfil más aromático, tropical y seductor. La base del chilcano se mantiene fresca y burbujeante, mientras la fruta suma color, expresión y una acidez muy agradable. Es una opción moderna, visualmente atractiva y perfecta para una cava contemporánea.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://www.sedovin.com/blog-sedovin/wp-content/uploads/2024/05/bot.oloroso_t.a.nueva_-scaled.jpg"
+                            <img src="https://i.pinimg.com/736x/b4/65/db/b465db2be63c8290c48fd393d9399bf7.jpg"
                                 alt="Cabernet Sauvignon" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Cabernet<br>Sauvignon 2018</h2>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;"><br>Chilcano de Maracuyá</h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">RESERVA</span>
                                 </div>
                                 <div style="display: flex; flex-direction: column; align-items: flex-end;">
-                                    <span class="price-discount" style="font-size: 0.9rem;">$120</span>
-                                    <span class="ref-card-price" style="font-size: 1.1rem;">$95</span>
+
+                                    <span class="ref-card-price" style="font-size: 2.2rem;">S/95</span>
+                                    <span class="price-discount" style="font-size: 0.9rem;">S/120</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
                     <!-- NUEVO: Cava 5 -->
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Con un perfil más aromático y sofisticado, esta versión del chilcano incorpora hierbaluisa para dar un matiz herbal suave y elegante. Su estructura sigue siendo ligera y refrescante, pero gana complejidad y personalidad. Funciona muy bien en una carta gourmet que busca ofrecer coctelería peruana con un giro más refinado.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://ewine.cl/3053-thickbox_default/syrah-reserva-privada-vina-aromo.jpg"
+                            <img src="https://i.pinimg.com/736x/e9/c2/8d/e9c28de8668fb7a7f230c43a0c00797c.jpg"
                                 alt="Syrah" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Syrah<br>Valle Sagrado</h2>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Syrah<br>Chilcano de Hierbaluisa</h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">EXCLUSIVO</span>
                                 </div>
-                                <span class="ref-card-price" style="font-size: 1.1rem;">$145</span>
+                                <span class="ref-card-price" style="font-size: 2.2rem;">S/145</span>
                             </div>
                         </div>
                     </article>
 
                     <!-- NUEVO: Cava 6 -->
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Esta expresión destaca por su perfil más perfumado y expresivo, ideal para clientes que buscan una experiencia más aromática y amable. Su carácter floral y su sensación suave lo convierten en una excelente opción para degustación o para una cava que quiera mostrar diferentes estilos de pisco con elegancia.">
                         <figure class="ref-card-img-wrapper"
                             style="background:#F4F1E9; padding:20px; aspect-ratio: 4/5;">
-                            <img src="https://http2.mlstatic.com/D_Q_NP_938512-MLA93179765543_092025-O.webp"
+                            <img src="https://i.pinimg.com/736x/b4/c0/fe/b4c0fe2019259a55945030f6a1ff6c70.jpg"
                                 alt="Merlot" style="object-fit:contain;">
                         </figure>
                         <div class="ref-card-content" style="padding: 20px;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
                                 <div>
-                                    <h2 class="ref-card-title" style="font-size:1.4rem;">Merlot<br>Tinto Fino</h2>
+                                    <h2 class="ref-card-title" style="font-size:1.4rem;"><br>Italia Aromática</h2>
                                     <span
                                         style="font-family: var(--fuente-cuerpo); font-size: 0.6rem; letter-spacing: 1px; color: #888; border: 1px solid #ddd; padding: 4px 8px;">TERROIR</span>
                                 </div>
-                                <span class="ref-card-price" style="font-size: 1.1rem;">$85</span>
+                                <span class="ref-card-price" style="font-size: 2.2rem;">S/85</span>
                             </div>
                         </div>
                     </article>
@@ -663,131 +695,166 @@
 
             <div class="layout-degustacion">
                 <div class="ref-card-wrapper">
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Esta degustación enfrenta dos preparaciones muy queridas de la cocina peruana elaboradas a base de maíz. El tamal aporta mayor profundidad y relleno, mientras la humita ofrece suavidad y un perfil más delicado. Servidos en porciones pequeñas, permiten una experiencia cálida, auténtica y visualmente muy armónica dentro de una propuesta gourmet.">
                         <figure class="ref-card-img-wrapper">
-                            <img src="https://www.wisdomlib.org/uploads/recipes/pepper-grilled-scallops-6499.jpg"
+                            <img src="https://i.pinimg.com/1200x/f0/0f/b2/f00fb221ec2113ccfa1d4c225be30801.jpg"
                                 alt="Vieiras al Trufado">
                         </figure>
                         <div class="ref-card-content" style="text-align: center;">
-                            <h2 class="ref-card-title" style="font-size:1.6rem;">Vieiras al Trufado</h2>
-                            <p class="ref-card-desc">Vieiras patagónicas selladas, puré de coliflor trufado y aceite
-                                verde.</p>
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Tradición de Maíz y Hoja</h2>
+                            <p class="ref-card-desc">Dos clásicos peruanos de maíz en un formato cálido y delicado.</p>
                             <span class="ref-card-price"
-                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$42</span>
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">S/42</span>
                         </div>
                     </article>
                 </div>
                 <div class="ref-card-wrapper">
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Esta propuesta toma como base uno de los acompañamientos más queridos del Perú y lo convierte en protagonista. Cada versión presenta una cobertura distinta: lomo salteado, mariscos o salsa criolla intensa. El resultado es una degustación de gran cuerpo, contrastes definidos y excelente presencia visual, ideal para un concepto gourmet de fuerte identidad local.">
                         <figure class="ref-card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=800"
+                            <img src="https://i.pinimg.com/1200x/66/22/66/6622668e5951f29de0f41769c5ba6b4d.jpg"
                                 alt="Tartar de Salmón">
                         </figure>
                         <div class="ref-card-content" style="text-align: center;">
-                            <h2 class="ref-card-title" style="font-size:1.6rem;">Tartar de Salmón</h2>
-                            <p class="ref-card-desc">Salmón fresco, emulsión de aguacate, alcaparras y crujiente de
-                                sésamo.</p>
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Tacu Tacu en Tres Tiempos</h2>
+                            <p class="ref-card-desc">Tres versiones del tacu tacu con distintos perfiles peruanos.</p>
                             <span class="ref-card-price"
-                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$38</span>
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">S/38</span>
                         </div>
                     </article>
                 </div>
                 <div class="ref-card-wrapper">
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Pensada para quienes disfrutan la cocina chifa, esta degustación reúne tres elementos muy reconocidos del repertorio peruano-oriental. El arroz chaufa aporta el corazón del wok, el tallarín saltado suma textura envolvente y el wantán crocante completa el contraste. Es una propuesta comercial, vistosa y muy fácil de integrar en una carta gastronómica moderna.">
                         <figure class="ref-card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+                            <img src="https://i.pinimg.com/1200x/49/f3/10/49f3104d651824cbf232379ef0e38f73.jpg"
                                 alt="Corazón de Lomo">
                         </figure>
                         <div class="ref-card-content" style="text-align: center;">
-                            <h2 class="ref-card-title" style="font-size:1.6rem;">Corazón de Lomo</h2>
-                            <p class="ref-card-desc">Corte magro a la parrilla, demi-glace de vino tinto y vegetales
-                                baby orgánicos.</p>
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Chifa de Autor en Mesa</h2>
+                            <p class="ref-card-desc">Sabores chifa peruanos en una composición abundante y elegante.</p>
                             <span class="ref-card-price"
-                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$65</span>
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">S/65</span>
                         </div>
                     </article>
                 </div>
                 <div class="ref-card-wrapper">
-                    <article class="ref-card product-trigger">
+                    <article class="ref-card product-trigger"
+                    data-description-long="Inspirada en la tradición del norte del Perú, esta propuesta combina sabores intensos y profundamente caseros. El seco de cabrito brinda profundidad, el arroz aporta cuerpo y el tamal suma textura y memoria culinaria. Servido en porciones pequeñas, este recorrido logra una experiencia amplia, coherente y de gran atractivo para una carta regional refinada.">
                         <figure class="ref-card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=800"
+                            <img src="https://i.pinimg.com/736x/49/13/d2/4913d203bf23197222279bd192c7c3d8.jpg"
                                 alt="Ravioli Artesanal">
                         </figure>
                         <div class="ref-card-content" style="text-align: center;">
-                            <h2 class="ref-card-title" style="font-size:1.6rem;">Ravioli Artesanal</h2>
-                            <p class="ref-card-desc">Relleno de ricotta y espinaca, mantequilla de salvia y crocante de
-                                parmesano.</p>
+                            <h2 class="ref-card-title" style="font-size:1.6rem;">Sabores del Norte Noble</h2>
+                            <p class="ref-card-desc">Cocina norteña peruana en un formato cálido, abundante y distinguido.</p>
                             <span class="ref-card-price"
-                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">$45</span>
+                                style="font-size:1.8rem; font-weight: 400; margin-top: 20px; display: block; color: var(--oro-champagne);">S/<b>45</b></span>
                         </div>
                     </article>
                 </div>
             </div>
         </div>
     </main>
-
-    <!-- ==========================================================================
+<!-- ==========================================================================
          NUEVO: PIE DE PÁGINA (FOOTER)
          Añadido para cumplir el requerimiento de Logos referenciales, redes sociales
          y enlaces legales con estética Quiet Luxury.
-         ========================================================================== -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Título / Logo del Footer -->
-            <h2 class="footer-logo">Origen Selecto</h2>
+         ==========================================================================  -->
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-logo">
+                    <img src="imagenes/LOGO OPC2.png" alt="Logo Origen selecto">
+                </div>
+                <div class="footer-links">
 
-            <!-- Enlaces de texto solicitados en el mockup -->
-            <div class="footer-links">
-                <a href="#">PRIVACIDAD</a>
-                <a href="#">TÉRMINOS DE SERVICIO</a>
-                <a href="#">ALIANZAS</a>
-                <a href="#">SOSTENIBILIDAD</a>
+                    <h4>HORARIO</h4>
+                    <ul>
+
+                        <li>Lunes a Sábado</li>
+                        <li>10:00 a.m. - 9:00 p.m.</li>
+                        <li>Domingos</li>
+                        <li>10:00 a.m. - 7:00 p.m.</li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+
+                    <h4>DIRECCIÓN</h4>
+                    <ul>
+
+                        <li>Av. de la Aviación 175, Miraflores</li>
+                        <li><a href="https://www.google.com/maps/place/Av.+de+la+Aviaci%C3%B3n+175,+Miraflores+15074/@-12.1196289,-77.044566,17z/data=!3m1!4b1!4m6!3m5!1s0x9105c824d54c6943:0x4c247a11d84acf1c!8m2!3d-12.1196342!4d-77.0419911!16s%2Fg%2F11rg67ryn3?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank">
+                                Cómo llegar
+                            </a>
+
+                    </ul>
+                </div>
+                <div class="footer-links proveer">
+
+                    <h4>NUESTROS PROVEEDORES</h4>
+                    <ul class="father">
+
+                        <li>
+                            <a href="https://www.tradefood.com.pe/" target="_blank">
+                                <img src="imagenes/logosreferenciales1.png" alt="Tradefood" class="proveeimg">
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://alicampo.com/" target="_blank">
+                                <img src="imagenes/logosreferenciales2.png" alt="Alicampo" class="proveeimg" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://campograndeperu.com/" target="_blank">
+                                <img src="imagenes/logosreferenciales3.png" alt="Campo Grande Perú" class="proveeimg">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>CONTÁCTANOS</h4>
+                    <ul class="father">
+
+                        <li><a href="file:///C:/Users/ALYSSON/Documents/Formulario/index.html?"
+                                target="_blank">Regístrarse</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>REDES SOCIALES</h4>
+                    <div class="social-link">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Logos referenciales de empresas (Requerimiento) -->
-            <div class="footer-reference-logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Michelin_star.svg/1200px-Michelin_star.svg.png"
-                    alt="Michelin Star" class="ref-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/The_World%27s_50_Best_Restaurants_logo.svg/1200px-The_World%27s_50_Best_Restaurants_logo.svg.png"
-                    alt="The World's 50 Best" class="ref-logo"
-                    style="filter: grayscale(100%) brightness(0); opacity: 0.7;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Relais_%26_Ch%C3%A2teaux_logo.svg/2560px-Relais_%26_Ch%C3%A2teaux_logo.svg.png"
-                    alt="Relais Chateaux" class="ref-logo">
+            <div class="footeraño">
+                <p> @ 2026 Origen Selecto | Todos los derechos reservados</p>
             </div>
 
-            <!-- Copyright -->
-            <p class="footer-copyright">© 2024 ORIGEN SELECTO. PATRIMONIO GASTRONÓMICO.</p>
-
-            <!-- Redes sociales (3 iconos con hipervínculos) -->
-            <div class="footer-socials">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <!-- Icono SVG de Instagram -->
-                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <!-- Icono SVG de LinkedIn -->
-                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                    <!-- Icono SVG de Facebook -->
-                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.5" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                </a>
-            </div>
         </div>
+
     </footer>
+
+
+
 
     <!-- MODAL / LIGHTBOX HTML -->
     <div id="editorial-modal" class="modal-overlay">
@@ -805,6 +872,7 @@
         </div>
     </div>
 
+ </div>
     <script src="main.js"></script>
 </body>
 

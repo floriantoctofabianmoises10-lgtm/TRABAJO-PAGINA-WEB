@@ -50,8 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const priceEl = card.querySelector('.ref-card-price');
                 const price = priceEl ? priceEl.textContent : '';
 
-                const descEl = card.querySelector('.ref-card-desc');
-                const desc = descEl ? descEl.textContent : '';
+                const desc =card.dataset.descriptionLong || '';
 
                 modalImg.src = imgSrc;
                 // Si la imagen tenía filtro BW, en el modal lo quitamos

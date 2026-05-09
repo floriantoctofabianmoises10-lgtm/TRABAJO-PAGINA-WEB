@@ -377,8 +377,8 @@ body {
 .ref-card-price {
   font-family: var(--fuente-titulos);
   color: var(--oro-champagne);
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 1300;
 }
 .ref-card-add {
   font-size: 1.5rem;
@@ -395,23 +395,28 @@ body {
   margin-top: 40px;
 }
 .layout-coleccion .ref-card-img-wrapper img {
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 .layout-coleccion .ref-card:hover .ref-card-img-wrapper img {
   filter: grayscale(0%);
 }
 .layout-coleccion .featured-card {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
   z-index: 2;
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
+
+
 .layout-coleccion .featured-card:hover {
   transform: scale(1.1) translateY(-5px);
 }
 .layout-coleccion .featured-card .ref-card-img-wrapper {
-  aspect-ratio: 4/5; /* Un poco más vertical para la destacada */
+   /*aspect-ratio: 4/5; Un poco más vertical para la destacada */
 }
 
+.layout-coleccion .ref-card:hover{
+  transform: scale(1.1) translateY(-5px);
+}
 /* Layout Platos (Misma estructura que Colección, sin B/N) */
 .layout-platos {
   display: grid;
@@ -421,15 +426,20 @@ body {
   margin-top: 40px;
 }
 .layout-platos .featured-card {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
   z-index: 2;
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 .layout-platos .featured-card:hover {
   transform: scale(1.1) translateY(-5px);
 }
+
+.layout-platos .ref-card:hover {
+  transform: scale(1.1) translateY(-5px);
+
+}
 .layout-platos .featured-card .ref-card-img-wrapper {
-  aspect-ratio: 4/5;
+ /* aspect-ratio: 4/5;*/
 }
 
 /* 5. LAYOUT 2: POSTRES DE AUTOR (4 Columnas Limpias) */
@@ -438,6 +448,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin-top: 40px;
+}
+
+.layout-postres .ref-card:hover{
+  transform: scale(1.1) translateY(-5px);
+
 }
 .price-discount {
   color: #aaa;
@@ -456,6 +471,10 @@ body {
 }
 .layout-degustacion .ref-card {
   transition: transform 0.3s ease;
+}
+.layout-degustacion .ref-card:hover{
+  transform: scale(1.1) translateY(-5px);
+
 }
 .layout-degustacion .ref-card-wrapper:nth-child(even) {
   transform: translateY(60px);
@@ -681,13 +700,14 @@ body {
    Sección final de la página. Estética muy limpia, tipografías elegantes
    y estructura minimalista.
    ========================================================================== */
-.site-footer {
-  background-color: var(--crema-marfil); /* Fondo suave */
-  border-top: 1px solid rgba(197, 160, 89, 0.3); /* Línea superior sutil dorada */
-  padding: 80px 5% 40px; /* Mucho padding arriba para respirar */
+
+/**   .site-footer {
+  background-color: var(--crema-marfil); /* Fondo suave 
+  border-top: 1px solid rgba(197, 160, 89, 0.3); /* Línea superior sutil dorada 
+  padding: 80px 5% 40px; /* Mucho padding arriba para respirar 
   margin-top: 100px;
 }
-
+/****
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -697,7 +717,7 @@ body {
   text-align: center;
 }
 
-/* El nombre principal del restaurante en el footer */
+/* El nombre principal del restaurante en el footer 
 .footer-logo {
   font-family: var(--fuente-titulos);
   font-size: 2.5rem;
@@ -708,6 +728,7 @@ body {
 }
 
 /* Lista de enlaces institucionales */
+/*
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -727,10 +748,10 @@ body {
 }
 
 .footer-links a:hover {
-  color: var(--oro-champagne); /* Hover elegante dorado */
+  color: var(--oro-champagne); /* Hover elegante dorado 
 }
 
-/* Contenedor de logos de empresas referenciales */
+/* Contenedor de logos de empresas referenciales 
 .footer-reference-logos {
   display: flex;
   align-items: center;
@@ -740,22 +761,22 @@ body {
   flex-wrap: wrap;
 }
 
-/* Estilo para que los logos se vean integrados (blanco y negro o sutiles) */
+/* Estilo para que los logos se vean integrados (blanco y negro o sutiles) 
 .ref-logo {
-  height: 60px; /* Altura controlada */
+  height: 60px; /* Altura controlada 
   max-width: 150px;
   object-fit: contain;
   /* El filtro grayscale los vuelve grises/blanco y negro, 
-     opacity los hace sutiles para no robar protagonismo */
+     opacity los hace sutiles para no robar protagonismo 
   filter: grayscale(100%) opacity(0.6); 
   transition: all 0.3s ease;
 }
 
 .ref-logo:hover {
-  filter: grayscale(0%) opacity(1); /* Toman color y fuerza al pasar el mouse */
+  filter: grayscale(0%) opacity(1); /* Toman color y fuerza al pasar el mouse 
 }
 
-/* Texto de derechos reservados */
+/* Texto de derechos reservados 
 .footer-copyright {
   font-family: var(--fuente-cuerpo);
   font-size: 0.75rem;
@@ -764,7 +785,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Contenedor de iconos de redes sociales */
+/* Contenedor de iconos de redes sociales 
 .footer-socials {
   display: flex;
   gap: 20px;
@@ -772,15 +793,131 @@ body {
 }
 
 .footer-socials a {
-  color: var(--azul-medianoche); /* Color oscuro base */
+  color: var(--azul-medianoche); /* Color oscuro base 
   transition: color 0.3s, transform 0.3s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Hover de iconos sociales (se vuelven dorados y suben sutilmente) */
+/* Hover de iconos sociales (se vuelven dorados y suben sutilmente) 
 .footer-socials a:hover {
   color: var(--oro-champagne);
   transform: translateY(-3px);
 }
+*/
+/* ESTILO DE LA SECCION FOOTER */
+
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #ffffff;
+    justify-content:end;
+}
+
+.footer-row{
+    display: flex;
+}
+
+.footer-logo img{
+    width: 220px;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links img{
+    height: 55px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-links h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color:#121826;
+    margin-bottom: 25px;
+    font-weight: 550;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #a69f9f;
+}
+
+.footer-links a {
+  font-size: 15px;
+  color: #BBBBBB;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover{
+    color: #625e5e;
+    padding-left: 6px;
+    transition: all 0.3s ease;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40 px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.563);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #00000F;
+    transition: all 0.3s ease;
+}
+
+.social-link a:hover{
+    background-color: #F6E5B8;
+}
+
+.footeraño p{
+    text-align: center;
+    color: #BBBBBB;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.274);
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 551px) {
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.father{
+  justify-items: center;
+  display:list-item;
+
+}
+
+.proveeimg:hover{
+    color: #625e5e;
+    padding-left: 6px;
+  transition: all 0.3s ease;
+}
+
