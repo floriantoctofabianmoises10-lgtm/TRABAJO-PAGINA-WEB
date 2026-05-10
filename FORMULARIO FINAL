@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner-contacto"> 
+        <div class="slider-top">
+            <div class="slides">
+                <img src="slider/imagen1web.png">
+                <img src="slider/imagen2web.png">
+                <img src="slider/imagen3web.png">
+                <img src="slider/imagen1web.png">
+            </div>
+
+            <div class="titulo-contacto">
+                <h1>CONTACTO</h1>
+                <p>En Origen Selecto valoramos cada interacción con nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-formulario">
+
+        <div class="container">
+            <form class="form">
+                <h2>Escríbenos</h2>
+                <p>
+                    Nos encantaría saber de ti.
+                    Déjanos tu consulta, comentario o sugerencia a través del formulario y te responderemos lo antes posible. Tu opinión nos ayuda a seguir mejorando cada día.
+                </p>
+
+                <label for="nombre">Escribe tu nombre</label>
+                <input type="text" id="nombre" class="box">
+
+                <label for="correo">Escribe tu correo</label>
+                <input type="email" id="correo" class="box">
+
+                <label for="mensaje">Escribe tu mensaje</label>
+                <textarea class="box" id="mensaje" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Enviar" class="submit">
+            </form>
+
+            <div class="info">
+                <img src="imagenes/logo.svg" class="img-1" alt="">
+
+                <div class="location">
+
+                    <div class="icons">
+                        <img src="imagenes/304967.svg" alt="">
+                        <p>OrigenSelecto@gmail.com</p>
+                    </div>
+
+                    <div class="icons">
+                        <img src="imagenes/304080.svg" alt="">
+                        <p>+51 963 258 741</p>
+                    </div>
+
+                    <div class="icons">
+                        <img src="imagenes/1864379.svg" alt="">
+                        <p>Av. de la Aviación 175, Miraflores</p>
+                    </div>
+                    
+                </div>
+
+                <div class="proveedores">
+                    <h2>Proveedores</h2>
+
+                    <div class="logoprov">
+                        <img src="logosreferenciales/logosreferenciales1.png">
+                        <img src="logosreferenciales/logosreferenciales2.png">
+                        <img src="logosreferenciales/logosreferenciales3.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.banner-contacto{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.titulo-contacto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo-contacto h1{
+    color: #e7c466;
+    font-size: 90px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.6);
+    font-family: 'Cormand Garamond', serif;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.titulo-contacto p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: 0 0 15px rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    color: #e7c466;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 18s infinite ease-in-out;
+}
+
+.slides img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%   { margin-left: 0; }
+    20%  { margin-left: 0; }
+
+    25%  { margin-left: -100%; }
+    45%  { margin-left: -100%; }
+
+    50%  { margin-left: -200%; }
+    70%  { margin-left: -200%; }
+
+    75%  { margin-left: -300%; }
+    95%  { margin-left: -300%; }
+
+    100% { margin-left: -300%; }
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    height: 750px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 25px;
+    margin-bottom: 100px;
+}
+
+
+.fondo-formulario{
+    background-image: url("imagenes/imgfondo.png");
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.form{
+
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2{
+    font-size: 45px;
+    color: #000d1e;
+    margin-bottom: 25px;
+}
+
+.form p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+label{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.box{
+    border: 0;
+    background-color: #E7E5E4;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.submit{
+    background-color: #000d1e;
+    border: 0;
+    padding: 15px;
+    color: #FFFF;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+    margin-top: 25px;
+    box-shadow: #656060;
+}
+
+.info{
+    padding: 50px;
+}
+
+.img-1{
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.icons img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.icons p{
+    font-size: 14px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.proveedores{
+    margin-top: 20px;
+}
+
+.proveedores h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000d1e;
+}
+
+.logoprov{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logoprov img{
+    height: 80px;
+    width: auto;
+}
+
